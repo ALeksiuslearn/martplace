@@ -74,20 +74,152 @@
   &__list-item {
     text-transform: uppercase;
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 20px;
   }
   &__list-link {
     font-size: 15px;
     font-weight: 500;
+    padding: 5px;
   }
 }
 .header__search {
-  &-input {
+  max-width: 360px;
+  position: relative;
+  width: 100%;
+
+  & input {
+    border: 1px solid #d9dfe5;
+    border-radius: 23px;
+    display: block;
     font-size: 15px;
     font-weight: 400;
-    line-height: 30px;
-    placeholder {
-      padding: 16px 25px;
+    width: 100%;
+    padding: 16px 25px;
+    color: #898f96;
+    outline: none;
+    &::placeholder {
+      border-radius: 23px;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 30px;
     }
+  }
+  & button {
+    background: no-repeat cover center;
+    position: absolute;
+    background-color: $linkbg;
+    width: 70px;
+    height: 49px;
+    border-radius: 23px;
+    top: 1px;
+    right: 1px;
+    border: none;
+  }
+}
+//======END HEADER=========
+
+.marketplace {
+  &__inner {
+    position: relative;
+    text-align: center;
+    color: #f3f3f8;
+    padding: 185px 0 235px;
+  }
+
+  &__title {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 400;
+    padding-bottom: 35px;
+    span {
+      display: block;
+      font-weight: 700;
+    }
+  }
+  &__text {
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 65px;
+  }
+  &__btn {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    & button {
+      padding: 21px 31px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 28px;
+      color: #ffffff;
+      border: 1px solid #fff;
+      background-color: $linkbg;
+      cursor: pointer;
+    }
+  }
+}
+.marketplace__search {
+  position: absolute;
+  bottom: -65px;
+  left: 0;
+  right: 0;
+  border: 1px solid #ffff;
+  background-color: #fff;
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+
+  & input {
+    padding: 20px 30px;
+    border: 1px solid #dcdcdc;
+    width: 810px;
+    border-radius: 4px;
+  }
+  &::placeholder {
+    color: #676767;
+    margin: 0;
+  }
+  & select {
+    position: absolute;
+    padding: 18px 18px;
+    color: #555555;
+    right: 301px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  & button {
+    margin-left: 30px;
+    padding: 20px 60px;
+    background-color: $linkbg;
+    color: #fff;
+    border-radius: 4px;
+  }
+  & form {
+    width: 100%;
+    margin: 40px 0 40px 0;
+  }
+}
+.marketplace__search-box {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  ::before,
+  ::after {
+    content: "";
+    height: 100%;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 6px;
+    opacity: 0.5;
+    z-index: -1;
+  }
+  ::before {
+    right: 15px;
+    width: calc(100% - 30px);
+    top: -53px;
+  }
+  ::after {
+    width: calc(100% - 60px);
+    left: 30px;
+    top: -66px;
   }
 }

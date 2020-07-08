@@ -9,6 +9,7 @@ html {
 a {
   display: inline-block;
   text-decoration: none;
+  cursor: pointer;
 }
 ul,
 li {
@@ -35,4 +36,8 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+button {
+  cursor: pointer;
+  border: none;
 }

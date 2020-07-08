@@ -145,6 +145,14 @@
     width: 100%;
     font-size: 16px;
     font-weight: 400;
+
+    :hover {
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+      color: $linkbg;
+      transition: all 0.5s;
+    }
+
     & button {
       padding: 21px 31px;
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -152,7 +160,6 @@
       color: #ffffff;
       border: 1px solid #fff;
       background-color: $linkbg;
-      cursor: pointer;
     }
   }
 }
@@ -222,4 +229,170 @@
     left: 30px;
     top: -66px;
   }
+}
+
+//========END MARKETPLACE===
+
+//===========benefits start====
+.benefits__items {
+  padding: 185px 0 121px 0;
+  display: flex;
+  justify-content: center;
+}
+.benefits__item {
+  padding: 40px 35px 50px;
+  max-width: 360px;
+  min-height: 405px;
+  transition: all 0.5s;
+
+  text-align: center;
+  & + .benefits__item {
+    margin-left: 30px;
+  }
+  &-img {
+    padding-bottom: 35px;
+  }
+  &-title {
+    color: #010101;
+    font-size: 24px;
+    padding-bottom: 30px;
+  }
+  &-text {
+    color: #555555;
+  }
+}
+.benefits__item:hover {
+  box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+// ==========END benefits======== ========start weekly========== .weekly {
+.weekly {
+  background-color: #eff1f5;
+  padding: 120px 0;
+}
+.weekly__items {
+  margin-top: 50px;
+}
+.weekly__item {
+  display: block !important;
+  display: flex !important;
+}
+.weekly__item-img img {
+  max-width: 550px;
+  height: 450px;
+
+  // background: no-repeat center cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.weekly__descr {
+  box-shadow: 0 2px 30px rgba(147, 155, 168, 0.1);
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding: 30px 30px 25px;
+  &-title {
+    color: #000000;
+    font-size: 24px;
+    padding-bottom: 23px;
+  }
+}
+.weekly__descr-tech {
+  margin-bottom: 40px;
+}
+.weekly__tech-name {
+  position: relative;
+  color: #000000;
+  font-size: 15px;
+  padding-left: 40px;
+
+  &:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: #7347c1;
+    background-image: url(../images/weekly/icons/AazzTech.svg);
+    background: no-repeat cover center;
+    border-radius: 50%;
+    position: absolute;
+    left: 2px;
+    top: -6px;
+  }
+}
+.weekly__tech-shell {
+  position: relative;
+  padding-left: 25px;
+  color: #7347c1;
+  font-size: 15px;
+  font-weight: 400;
+  position: relative;
+  margin-left: 20px;
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/weekly/icons/wss.png);
+    background: no-repeat cover center;
+    left: 2px;
+    top: 1px;
+  }
+}
+
+.weekly__descr-text {
+  color: $text;
+  padding: 40px;
+  overflow: hidden;
+}
+.weekly__descr-category {
+  span {
+    padding: 8px 15px;
+    color: #868c96;
+    font-size: 15px;
+    border-radius: 14px;
+    background-color: #f1f3f6;
+    & + span {
+      margin-left: 7px;
+    }
+  }
+  padding-bottom: 43px;
+  border-bottom: 1px solid #ececec;
+}
+.weekly__descr-panel {
+  margin-top: 23px;
+}
+.weekly__panel-price {
+  color: #ffffff;
+  background-color: $linkbg;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 9px 18px;
+  border-radius: 16px;
+}
+.slick-arrow {
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  top: -120px;
+  right: 30px;
+  left: auto;
+  background-color: #7347c1;
+  width: 55px;
+  height: 45px;
+
+  // background-color: transparent;
+  font-size: 0;
+}
+
+.slick-arrow.slick-prev {
+  right: 85px;
+  border-radius: 23px 0 0 23px;
+}
+
+.slick-arrow.slick-next {
+  border-radius: 0 23px 23px 0;
 }

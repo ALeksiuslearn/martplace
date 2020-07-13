@@ -76,25 +76,24 @@
                     <button class="marketplace__popular-btn">Popular Products</button>
                 </div>
                 <div class="marketplace__search">
-                    <div class="marketplace__search-box">
-                        <form>
-                            <input type="text" placeholder="Search your products...">
-                            <select name="categoryfilter">
-                                <option selected value="All Categories">all categories</option>
-                                <option value="Plugins"> Plugins</option>
-                                <option value="WordPress">WordPress</option>
-                                <option value="Site Template">Site Template</option>
-                                <option value="PSD Template">PSD Template</option>
-                                <option value="Joomla">Joomla</option>
-                                <option value="User Interface">User Interface</option>
-                                <option value="Landing Page">Landing Page</option>
-                                <option value="Software">Software</option>
-                            </select>
-                            <button type="submit">Search Now</button>
-                        </form>
-                    </div>
+                    <form>
+                        <input type=" text" placeholder="Search your products...">
+                        <select id="categorysel" name="categoryfilter">
+                            <option selected value="All Categories">all categories</option>
+                            <option value="Plugins"> Plugins</option>
+                            <option value="WordPress">WordPress</option>
+                            <option value="Site Template">Site Template</option>
+                            <option value="PSD Template">PSD Template</option>
+                            <option value="Joomla">Joomla</option>
+                            <option value="User Interface">User Interface</option>
+                            <option value="Landing Page">Landing Page</option>
+                            <option value="Software">Software</option>
+                        </select>
+                        <button type="submit">Search Now</button>
+                    </form>
                 </div>
             </div>
+
         </div>
 
         </div>
@@ -142,12 +141,16 @@
                 <div class="weekly__item">
                     <div class="weekly__item-img">
                         <img src="images/weekly/content/Bugatti-Chiron.jpg" alt="">
+                        <div class="product__item-extra weekly__item-extra">
+                            <a href="#" class="extra__more-info">More Info</a>
+                            <a href="#" class="extra__live-demo">Live Demo</a>
+                        </div>
                     </div>
                     <div class="weekly__descr">
                         <h3 class="weekly__descr-title">One Page Resume Template</h3>
                         <div class="weekly__descr-tech">
-                            <a class="weekly__tech-name">AazzTech</a>
-                            <a class="weekly__tech-shell">WordPress</a>
+                            <a class="weekly__tech-name tech-name">AazzTech</a>
+                            <a class="weekly__tech-shell tech-shell">WordPress</a>
                         </div>
                         <p class="weekly__descr-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
                             ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
@@ -158,39 +161,48 @@
                             <span>plugin</span>
                             <span>landing page</span>
                         </div>
-                        <div class="weekly__descr-panel">
+                        <div class="weekly__descr-panel descr-panel">
                             <button class="weekly__panel-price">$10-$50</button>
-                            <button class="weekly__panel-likes"></button>
-                            <a class="weekly__panel-basket" href="#"></a>
-                            <div class="weekly__panel-rating"></div>
+                            <div class="panel-likes">
+                                <button class="lnr-heart"></button> <span>46</span></div>
+                            <div class="panel-basket"> <a class=" lnr-cart" href="#">634</a></div>
+                            <div class="weekly__panel-rating panel-rating"></div>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="weekly__item">
+                <div class=" weekly__item">
                     <div class="weekly__item-img"> <img src="images/weekly/content/citroen-survolt.jpg" alt="">
+                        <div class="product__item-extra weekly__item-extra">
+                            <a href="#" class="extra__more-info">More Info</a>
+                            <a href="#" class="extra__live-demo">Live Demo</a>
+                        </div>
                     </div>
                     <div class=" weekly__descr">
                         <h3 class="weekly__descr-title">zwei Page Resume Template</h3>
                         <div class="weekly__descr-tech">
-                            <a class="weekly__tech-name">AazzTech</a>
-                            <a class="weekly__tech-shell" href="#">WordPress</a>
+                            <a class="weekly__tech-name tech-name">AazzTech</a>
+                            <a class="weekly__tech-shell tech-shell" href="#">WordPress</a>
                         </div>
-                        <p class="weekly__descr-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
-                            ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
-                            Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut
+                        <p class="weekly__descr-text">Nunc placerat mi id nisi interdum mollis. Praesent
+                            pharetra, justo
+                            ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum
+                            mollis.
+                            Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue
+                            justo ut
                             scelerisque.</p>
                         <div class="weekly__descr-category">
                             <span>WordPress</span>
                             <span>plugin</span>
                             <span>landing page</span>
                         </div>
-                        <div class="weekly__descr-panel">
+                        <div class="weekly__descr-panel descr-panel">
                             <button class="weekly__panel-price">$10-$50</button>
-                            <button class="weekly__panel-likes"></button>
-                            <a class="weekly__panel-basket" href="#"></a>
-                            <div class="weekly__panel-rating"></div>
+                            <div class="panel-likes">
+                                <button class="lnr-heart"></button> <span>46</span></div>
+                            <div class="panel-basket"> <a class=" lnr-cart" href="#">634</a></div>
+                            <div class="weekly__panel-rating panel-rating"></div>
                         </div>
                     </div>
                 </div>
@@ -199,27 +211,36 @@
 
                 <div class="weekly__item">
                     <div class="weekly__item-img">
-                        <img src="images/weekly/content/electric.jpg" alt=""> </div>
+                        <img src="images/weekly/content/electric.jpg" alt="">
+                        <div class="product__item-extra weekly__item-extra">
+                            <a href="#" class="extra__more-info">More Info</a>
+                            <a href="#" class="extra__live-demo">Live Demo</a>
+                        </div>
+                    </div>
                     <div class=" weekly__descr">
                         <h3 class="weekly__descr-title">drei Page Resume Template</h3>
                         <div class="weekly__descr-tech">
-                            <a class="weekly__tech-name">AazzTech</a>
-                            <a class="weekly__tech-shell">WordPress</a>
+                            <a class="weekly__tech-name tech-name">AazzTech</a>
+                            <a class="weekly__tech-shell tech-shell">WordPress</a>
                         </div>
-                        <p class="weekly__descr-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
-                            ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
-                            Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut
+                        <p class="weekly__descr-text">Nunc placerat mi id nisi interdum mollis. Praesent
+                            pharetra, justo
+                            ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum
+                            mollis.
+                            Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue
+                            justo ut
                             scelerisque.</p>
                         <div class="weekly__descr-category">
                             <span>WordPress</span>
                             <span>plugin</span>
                             <span>landing page</span>
                         </div>
-                        <div class="weekly__descr-panel">
+                        <div class="weekly__descr-panel descr-panel">
                             <button class="weekly__panel-price">$10-$50</button>
-                            <button class="weekly__panel-likes"></button>
-                            <a class="weekly__panel-basket" href="#"></a>
-                            <div class="weekly__panel-rating"></div>
+                            <div class="panel-likes">
+                                <button class="lnr-heart"></button> <span>46</span></div>
+                            <div class="panel-basket"> <a class=" lnr-cart" href="#">634</a></div>
+                            <div class="weekly__panel-rating panel-rating"></div>
                         </div>
                     </div>
                 </div>
@@ -228,27 +249,36 @@
 
                 <div class="weekly__item">
                     <div class="weekly__item-img">
-                        <img src=" images/weekly/content/pininfarina-battista.jpg" alt=""> </div>
+                        <img src=" images/weekly/content/pininfarina-battista.jpg" alt="">
+                        <div class="product__item-extra weekly__item-extra">
+                            <a href="#" class="extra__more-info">More Info</a>
+                            <a href="#" class="extra__live-demo">Live Demo</a>
+                        </div>
+                    </div>
                     <div class=" weekly__descr">
                         <h3 class="weekly__descr-title">4 Page Resume Template</h3>
                         <div class="weekly__descr-tech">
-                            <a class="weekly__tech-name">AazzTech</a>
-                            <a class="weekly__tech-shell">WordPress</a>
+                            <a class="weekly__tech-name tech-name">AazzTech</a>
+                            <a class="weekly__tech-shell tech-shell">WordPress</a>
                         </div>
-                        <p class="weekly__descr-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
-                            ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
-                            Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut
+                        <p class="weekly__descr-text">Nunc placerat mi id nisi interdum mollis. Praesent
+                            pharetra, justo
+                            ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum
+                            mollis.
+                            Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue
+                            justo ut
                             scelerisque.</p>
                         <div class="weekly__descr-category">
                             <span>WordPress</span>
                             <span>plugin</span>
                             <span>landing page</span>
                         </div>
-                        <div class="weekly__descr-panel">
-                            <div class="weekly__panel-price">$10-$50</div>
-                            <button class="weekly__panel-likes"></button>
-                            <a class="weekly__panel-basket" href="#"></a>
-                            <div class="weekly__panel-rating"></div>
+                        <div class="weekly__descr-panel descr-panel">
+                            <button class="weekly__panel-price">$10-$50</button>
+                            <div class="panel-likes">
+                                <button class="lnr-heart"></button> <span>46</span></div>
+                            <div class="panel-basket"> <a class=" lnr-cart" href="#">634</a></div>
+                            <div class="weekly__panel-rating panel-rating"></div>
                         </div>
                     </div>
                 </div>
@@ -257,27 +287,36 @@
 
                 <div class="weekly__item">
                     <div class="weekly__item-img">
-                        <img src="images/weekly/content/citroen-survolt.jpg" alt=""> </div>
+                        <img src="images/weekly/content/citroen-survolt.jpg" alt="">
+                        <div class="product__item-extra weekly__item-extra">
+                            <a href="#" class="extra__more-info">More Info</a>
+                            <a href="#" class="extra__live-demo">Live Demo</a>
+                        </div>
+                    </div>
                     <div class="weekly__descr">
                         <h3 class="weekly__descr-title">five Page Resume Template</h3>
                         <div class="weekly__descr-tech">
-                            <a class="weekly__tech-name">dsfsfTech</a>
-                            <a class="weekly__tech-shell">burumburumPress</a>
+                            <a class="weekly__tech-name tech-name">dsfsfTech</a>
+                            <a class="weekly__tech-shell tech-shell">wordPress</a>
                         </div>
-                        <p class="weekly__descr-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
-                            ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
-                            Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut
+                        <p class="weekly__descr-text">Nunc placerat mi id nisi interdum mollis. Praesent
+                            pharetra, justo
+                            ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum
+                            mollis.
+                            Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue
+                            justo ut
                             scelerisque.</p>
                         <div class="weekly__descr-category">
                             <span>WordPress</span>
                             <span>plugin</span>
                             <span>landing page</span>
                         </div>
-                        <div class="weekly__descr-panel">
-                            <div class="weekly__panel-price">$10-$50</div>
-                            <button class="weekly__panel-likes"></button>
-                            <a class="weekly__panel-basket" href="#"></a>
-                            <div class="weekly__panel-rating"></div>
+                        <div class="weekly__descr-panel descr-panel">
+                            <button class="weekly__panel-price">$10-$50</button>
+                            <div class="panel-likes">
+                                <button class="lnr-heart"></button> <span>46</span></div>
+                            <div class="panel-basket"> <a class=" lnr-cart" href="#">634</a></div>
+                            <div class="weekly__panel-rating panel-rating"></div>
                         </div>
                     </div>
                 </div>
@@ -286,34 +325,675 @@
 
                 <div class="weekly__item">
                     <div class="weekly__item-img">
-                        <img src="images/weekly/content/sport1.jpg" alt=""> </div>
+                        <img src=" images/weekly/content/Bugatti-Chiron.jpg" alt="">
+                        <div class="product__item-extra weekly__item-extra">
+                            <a href="#" class="extra__more-info">More Info</a>
+                            <a href="#" class="extra__live-demo">Live Demo</a>
+                        </div>
+                    </div>
                     <div class=" weekly__descr">
                         <h3 class="weekly__descr-title">six Page Resume Template</h3>
                         <div class="weekly__descr-tech">
-                            <a class="weekly__tech-name">KakahaTech</a>
-                            <a class="weekly__tech-shell">noobPress</a>
+                            <a class="weekly__tech-name tech-name">dsfsfTech</a>
+                            <a class="tech-shell weekly__tech-shell">wordPress</a>
                         </div>
-                        <p class="weekly__descr-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
-                            ut scelerisque the mattis, eo quam aliquet congue placerat mi id nisi interdum mollis.
-                            Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut
+                        <p class="weekly__descr-text">Nunc placerat mi id nisi interdum mollis. Praesent
+                            pharetra, justo
+                            ut scelerisque the mattis, eo quam aliquet congue placerat mi id nisi interdum
+                            mollis.
+                            Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue
+                            justo ut
                             scelerisque.</p>
                         <div class="weekly__descr-category">
                             <span>WordPress</span>
                             <span>plugin</span>
                             <span>landing page</span>
                         </div>
-                        <div class="weekly__descr-panel">
-                            <div class="weekly__panel-price">$10-$50</div>
-                            <button class="weekly__panel-likes"></button>
-                            <a class="weekly__panel-basket" href="#"></a>
-                            <div class="weekly__panel-rating"></div>
+                        <div class="weekly__descr-panel descr-panel">
+                            <button class="weekly__panel-price">$10-$50</button>
+                            <div class="panel-likes">
+                                <button class="lnr-heart"></button> <span>46</span></div>
+                            <div class="panel-basket"> <a class=" lnr-cart" href="#">634</a></div>
+                            <div class="weekly__panel-rating panel-rating"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="product">
+        <div class="container">
+            <div class="product__top">
+                <h2 class="products__title product__top-title">Newest Release Products</h2>
+                <div class="product__top-filter">
+                    Filter by: <a href="#">...</a>
+                </div>
+            </div>
+            <div class="product__inner">
+                <div class="product__menu">
+                    <button data-filter=".category-plugins" type="button">Plugins</button>
+                    <button data-filter=".category-wordpress" type="button">WordPress</button>
+                    <button data-filter=".category-sitetemplate" type="button">Site Template</button>
+                    <button data-filter=".category-psdtemplate" type="button">PSD Template</button>
+                    <button data-filter=".category-joomla" type="button">Joomla</button>
+                    <button data-filter=".category-userinterface" type="button">User Interface</button>
+                    <button data-filter=".category-landingpage" type="button">Landing Page</button>
+                    <button data-filter=".category-software" type="button">Software</button>
+                </div>
+                <div class="product__items">
+                    <div class="product__item mix category-software category-allnewproducts" data-order="1">
+                        <div class="product__item-img">
+                            <img src=" images/weekly/content/Bugatti-Chiron.jpg" alt="">
+                            <div class="product__item-extra">
+                                <a href="#" class="extra__more-info">More Info</a>
+                                <a href="#" class="extra__live-demo">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="product__descr">
+                            <h3 class="product__descr-title">E-commerce Shopping Cart</h3>
+                            <div class="product__descr-tech ">
+                                <a class="product__tech-name tech-name" href="#">dsfsfTech</a>
+                                <a class="product__tech-shell tech-shell" href="#">wordPress</a>
+                            </div>
+                            <p class="product__descr-text">Nunc placerat mi id nisi interdum mollis. Praesent
+                                pharetra,
+                                justo
+                                ut scelerisque
+                                the mattis, leo quam aliquet congue.</p>
+                        </div>
+                        <div class="product__panel panel">
+                            <a href="#" class="product__panel-money">$10</a>
+                            <div class="product__panel-likes"><a href="#" class="lnr-heart">90</a></div>
+                            <div class="product__panel-rating panel-rating"></div>
+                            <div class="product__panel-basket"> <a href="#" class="lnr-cart">50</a></div>
+                        </div>
+                    </div>
+                    <div class="product__item mix category-landingpage category-allnewproducts" data-order="2">
+                        <div class="product__item-img">
+                            <img src=" images/weekly/content/Bugatti-Chiron.jpg" alt="">
+                            <div class="product__item-extra">
+                                <a href="#" class="extra__more-info">More Info</a>
+                                <a href="#" class="extra__live-demo">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="product__descr">
+                            <h3 class="product__descr-title">E-commerce Shopping Cart</h3>
+                            <div class="product__descr-tech ">
+                                <a class="product__tech-name tech-name" href="#">dsfsfTech</a>
+                                <a class="product__tech-shell tech-shell" href="#">wordPress</a>
+                            </div>
+                            <p class="product__descr-text">Nunc placerat mi id nisi interdum mollis. Praesent
+                                pharetra,
+                                justo
+                                ut scelerisque
+                                the mattis, leo quam aliquet congue.</p>
+                        </div>
+                        <div class="product__panel panel">
+                            <a href="#" class="product__panel-money">$10</a>
+                            <div class="product__panel-likes"><a href="#" class="lnr-heart">90</a></div>
+                            <div class="product__panel-rating panel-rating"></div>
+                            <div class="product__panel-basket"> <a href="#" class="lnr-cart">50</a></div>
+                        </div>
+                    </div>
+                    <div class="product__item mix category-joomla category-allnewproducts category-allnewproducts">
+                        <div class="product__item-img">
+                            <img src=" images/weekly/content/Bugatti-Chiron.jpg" alt="">
+                            <div class="product__item-extra">
+                                <a href="#" class="extra__more-info">More Info</a>
+                                <a href="#" class="extra__live-demo">Live Demo</a>
+                            </div>
+                        </div>
 
+                        <div class="product__descr">
+                            <h3 class="product__descr-title">E-commerce Shopping Cart</h3>
+                            <div class="product__descr-tech ">
+                                <a class="product__tech-name tech-name" href="#">dsfsfTech</a>
+                                <a class="product__tech-shell tech-shell" href="#">wordPress</a>
+                            </div>
+                            <p class="product__descr-text">Nunc placerat mi id nisi interdum mollis. Praesent
+                                pharetra,
+                                justo
+                                ut scelerisque
+                                the mattis, leo quam aliquet congue.</p>
+                        </div>
+                        <div class="product__panel panel">
+                            <a href="#" class="product__panel-money">$10</a>
+                            <div class="product__panel-likes"><a href="#" class="lnr-heart">90</a></div>
+                            <div class="product__panel-rating panel-rating"></div>
+                            <div class="product__panel-basket"> <a href="#" class="lnr-cart">50</a></div>
+                        </div>
+                    </div>
+                    <div class="product__item mix category-joomla category-allnewproducts category-allnewproducts">
+                        <div class="product__item-img">
+                            <img src="images/weekly/content/Bugatti-Chiron.jpg" alt="">
+                            <div class="product__item-extra">
+                                <a href="#" class="extra__more-info">More Info</a>
+                                <a href="#" class="extra__live-demo">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="product__descr">
+                            <h3 class="product__descr-title">E-commerce Shopping Cart</h3>
+                            <div class="product__descr-tech ">
+                                <a class="product__tech-name tech-name" href="#">dsfsfTech</a>
+                                <a class="product__tech-shell tech-shell" href="#">wordPress</a>
+                            </div>
+                            <p class="product__descr-text">Nunc placerat mi id nisi interdum mollis. Praesent
+                                pharetra,
+                                justo
+                                ut scelerisque
+                                the mattis, leo quam aliquet congue.</p>
+                        </div>
+                        <div class="product__panel panel">
+                            <a href="#" class="product__panel-money">$10</a>
+                            <div class="product__panel-likes"><a href="#" class="lnr-heart">90</a></div>
+                            <div class="product__panel-rating panel-rating"></div>
+                            <div class="product__panel-basket"> <a href="#" class="lnr-cart">50</a></div>
+                        </div>
+                    </div>
+                    <div class="product__item mix category-wordpress category-psdtemplate category-allnewproducts">
+                        <div class="product__item-img">
+                            <img src=" images/weekly/content/Bugatti-Chiron.jpg" alt="">
+                            <div class="product__item-extra">
+                                <a href="#" class="extra__more-info">More Info</a>
+                                <a href="#" class="extra__live-demo">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="product__descr">
+                            <h3 class="product__descr-title">E-commerce Shopping Cart</h3>
+                            <div class="product__descr-tech ">
+                                <a class="product__tech-name tech-name" href="#">dsfsfTech</a>
+                                <a class="product__tech-shell tech-shell" href="#">wordPress</a>
+                            </div>
+                            <p class="product__descr-text">Nunc placerat mi id nisi interdum mollis. Praesent
+                                pharetra,
+                                justo
+                                ut scelerisque
+                                the mattis, leo quam aliquet congue.</p>
+                        </div>
+                        <div class="product__panel panel">
+                            <a href="#" class="product__panel-money">$10</a>
+                            <div class="product__panel-likes"><a href="#" class="lnr-heart">90</a></div>
+                            <div class="product__panel-rating panel-rating"></div>
+                            <div class="product__panel-basket"> <a href="#" class="lnr-cart">50</a></div>
+                        </div>
+                    </div>
+                    <div class="product__item mix category-plugins category-userinterface category-allnewproducts">
+                        <div class="product__item-img">
+                            <img src=" images/weekly/content/Bugatti-Chiron.jpg" alt="">
+                            <div class="product__item-extra">
+                                <a href="#" class="extra__more-info">More Info</a>
+                                <a href="#" class="extra__live-demo">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="product__descr">
+                            <h3 class="product__descr-title">E-commerce Shopping Cart</h3>
+                            <div class="product__descr-tech ">
+                                <a class="product__tech-name tech-name" href="#">dsfsfTech</a>
+                                <a class="product__tech-shell tech-shell" href="#">wordPress</a>
+                            </div>
+                            <p class="product__descr-text">Nunc placerat mi id nisi interdum mollis. Praesent
+                                pharetra,
+                                justo
+                                ut scelerisque
+                                the mattis, leo quam aliquet congue.</p>
+                        </div>
+                        <div class="product__panel panel">
+                            <a href="#" class="product__panel-money">$10</a>
+                            <div class="product__panel-likes"><a href="#" class="lnr-heart">90</a></div>
+                            <div class="product__panel-rating panel-rating"></div>
+                            <div class="product__panel-basket"> <a href="#" class="lnr-cart">50</a></div>
+                        </div>
+                    </div>
+                    <div class="product__item mix category-wordpress category-allnewproducts">
+                        <div class="product__item-img">
+                            <img src=" images/weekly/content/Bugatti-Chiron.jpg" alt="">
+                            <div class="product__item-extra">
+                                <a href="#" class="extra__more-info">More Info</a>
+                                <a href="#" class="extra__live-demo">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="product__descr">
+                            <h3 class="product__descr-title">E-commerce Shopping Cart</h3>
+                            <div class="product__descr-tech ">
+                                <a class="product__tech-name tech-name" href="#">dsfsfTech</a>
+                                <a class="product__tech-shell tech-shell" href="#">wordPress</a>
+                            </div>
+                            <p class="product__descr-text">Nunc placerat mi id nisi interdum mollis. Praesent
+                                pharetra,
+                                justo
+                                ut scelerisque
+                                the mattis, leo quam aliquet congue.</p>
+                        </div>
+                        <div class="product__panel panel">
+                            <a href="#" class="product__panel-money">$10</a>
+                            <div class="product__panel-likes"><a href="#" class="lnr-heart">90</a></div>
+                            <div class="product__panel-rating panel-rating"></div>
+                            <div class="product__panel-basket"> <a href="#" class="lnr-cart">50</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-all">
+                    <button data-filter=".category-allnewproducts" type="All New Products">All New Products</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="followers-feed">
+        <div class="container">
+            <h2 class="products__title followers-feed__title">Your Followers Feed</h2>
+            <div class="followers-feed__items">
+                <div class="product__item followers-feed__item">
+                    <div class="product__item-img">
+                        <img src=" images/weekly/content/Bugatti-Chiron.jpg" alt="">
+                        <div class="product__item-extra">
+                            <a href="#" class="extra__more-info">More Info</a>
+                            <a href="#" class="extra__live-demo">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="product__descr">
+                        <h3 class="product__descr-title">E-commerce Shopping Cart</h3>
+                        <div class="product__descr-tech ">
+                            <a class="product__tech-name tech-name" href="#">dsfsfTech</a>
+                            <a class="product__tech-shell tech-shell" href="#">wordPress</a>
+                        </div>
+                        <p class="product__descr-text">Nunc placerat mi id nisi interdum mollis. Praesent
+                            pharetra,
+                            justo
+                            ut scelerisque
+                            the mattis, leo quam aliquet congue.</p>
+                    </div>
+                    <div class="product__panel panel">
+                        <a href="#" class="product__panel-money">$10</a>
+                        <div class="product__panel-likes"><a href="#" class="lnr-heart">90</a></div>
+                        <div class="product__panel-rating panel-rating"></div>
+                        <div class="product__panel-basket"> <a href="#" class="lnr-cart">50</a></div>
+                    </div>
+                </div>
+                <div class="product__item followers-feed__item">
+                    <div class="product__item-img">
+                        <img src=" images/weekly/content/Bugatti-Chiron.jpg" alt="">
+                        <div class="product__item-extra">
+                            <a href="#" class="extra__more-info">More Info</a>
+                            <a href="#" class="extra__live-demo">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="product__descr">
+                        <h3 class="product__descr-title">E-commerce Shopping Cart</h3>
+                        <div class="product__descr-tech ">
+                            <a class="product__tech-name tech-name" href="#">dsfsfTech</a>
+                            <a class="product__tech-shell tech-shell" href="#">wordPress</a>
+                        </div>
+                        <p class="product__descr-text">Nunc placerat mi id nisi interdum mollis. Praesent
+                            pharetra,
+                            justo
+                            ut scelerisque
+                            the mattis, leo quam aliquet congue.</p>
+                    </div>
+                    <div class="product__panel panel">
+                        <a href="#" class="product__panel-money">$10</a>
+                        <div class="product__panel-likes"><a href="#" class="lnr-heart">90</a></div>
+                        <div class="product__panel-rating panel-rating"></div>
+                        <div class="product__panel-basket"> <a href="#" class="lnr-cart">50</a></div>
+                    </div>
+                </div>
+                <div class="product__item followers-feed__item">
+                    <div class="product__item-img">
+                        <img src=" images/weekly/content/Bugatti-Chiron.jpg" alt="">
+                        <div class="product__item-extra">
+                            <a href="#" class="extra__more-info">More Info</a>
+                            <a href="#" class="extra__live-demo">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="product__descr">
+                        <h3 class="product__descr-title">E-commerce Shopping Cart</h3>
+                        <div class="product__descr-tech ">
+                            <a class="product__tech-name tech-name" href="#">dsfsfTech</a>
+                            <a class="product__tech-shell tech-shell" href="#">wordPress</a>
+                        </div>
+                        <p class="product__descr-text">Nunc placerat mi id nisi interdum mollis. Praesent
+                            pharetra,
+                            justo
+                            ut scelerisque
+                            the mattis, leo quam aliquet congue.</p>
+                    </div>
+                    <div class="product__panel panel">
+                        <a href="#" class="product__panel-money">$10</a>
+                        <div class="product__panel-likes"><a href="#" class="lnr-heart">90</a></div>
+                        <div class="product__panel-rating panel-rating"></div>
+                        <div class="product__panel-basket"> <a href="#" class="lnr-cart">50</a></div>
+                    </div>
+                </div>
+                <div class="product__item followers-feed__item">
+                    <div class="product__item-img">
+                        <img src=" images/weekly/content/Bugatti-Chiron.jpg" alt="">
+                        <div class="product__item-extra">
+                            <a href="#" class="extra__more-info">More Info</a>
+                            <a href="#" class="extra__live-demo">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="product__descr">
+                        <h3 class="product__descr-title">E-commerce Shopping Cart</h3>
+                        <div class="product__descr-tech ">
+                            <a class="product__tech-name tech-name" href="#">dsfsfTech</a>
+                            <a class="product__tech-shell tech-shell" href="#">wordPress</a>
+                        </div>
+                        <p class="product__descr-text">Nunc placerat mi id nisi interdum mollis. Praesent
+                            pharetra,
+                            justo
+                            ut scelerisque
+                            the mattis, leo quam aliquet congue.</p>
+                    </div>
+                    <div class="product__panel panel">
+                        <a href="#" class="product__panel-money">$10</a>
+                        <div class="product__panel-likes"><a href="#" class="lnr-heart">90</a></div>
+                        <div class="product__panel-rating panel-rating"></div>
+                        <div class="product__panel-basket"> <a href="#" class="lnr-cart">50</a></div>
+                    </div>
+                </div>
+                <div class="product__item followers-feed__item">
+                    <div class="product__item-img">
+                        <img src=" images/weekly/content/Bugatti-Chiron.jpg" alt="">
+                        <div class="product__item-extra">
+                            <a href="#" class="extra__more-info">More Info</a>
+                            <a href="#" class="extra__live-demo">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="product__descr">
+                        <h3 class="product__descr-title">E-commerce Shopping Cart</h3>
+                        <div class="product__descr-tech ">
+                            <a class="product__tech-name tech-name" href="#">dsfsfTech</a>
+                            <a class="product__tech-shell tech-shell" href="#">wordPress</a>
+                        </div>
+                        <p class="product__descr-text">Nunc placerat mi id nisi interdum mollis. Praesent
+                            pharetra,
+                            justo
+                            ut scelerisque
+                            the mattis, leo quam aliquet congue.</p>
+                    </div>
+                    <div class="product__panel panel">
+                        <a href="#" class="product__panel-money">$10</a>
+                        <div class="product__panel-likes"><a href="#" class="lnr-heart">90</a></div>
+                        <div class="product__panel-rating panel-rating"></div>
+                        <div class="product__panel-basket"> <a href="#" class="lnr-cart">50</a></div>
+                    </div>
+                </div>
+                <div class="product__item followers-feed__item">
+                    <div class="product__item-img">
+                        <img src=" images/weekly/content/Bugatti-Chiron.jpg" alt="">
+                        <div class="product__item-extra">
+                            <a href="#" class="extra__more-info">More Info</a>
+                            <a href="#" class="extra__live-demo">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="product__descr">
+                        <h3 class="product__descr-title">E-commerce Shopping Cart</h3>
+                        <div class="product__descr-tech ">
+                            <a class="product__tech-name tech-name" href="#">dsfsfTech</a>
+                            <a class="product__tech-shell tech-shell" href="#">wordPress</a>
+                        </div>
+                        <p class="product__descr-text">Nunc placerat mi id nisi interdum mollis. Praesent
+                            pharetra,
+                            justo
+                            ut scelerisque
+                            the mattis, leo quam aliquet congue.</p>
+                    </div>
+                    <div class="product__panel panel">
+                        <a href="#" class="product__panel-money">$10</a>
+                        <div class="product__panel-likes"><a href="#" class="lnr-heart">90</a></div>
+                        <div class="product__panel-rating panel-rating"></div>
+                        <div class="product__panel-basket"> <a href="#" class="lnr-cart">50</a></div>
+                    </div>
+                </div>
+                <div class="product__item followers-feed__item">
+                    <div class="product__item-img">
+                        <img src=" images/weekly/content/Bugatti-Chiron.jpg" alt="">
+                        <div class="product__item-extra">
+                            <a href="#" class="extra__more-info">More Info</a>
+                            <a href="#" class="extra__live-demo">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="product__descr">
+                        <h3 class="product__descr-title">E-commerce Shopping Cart</h3>
+                        <div class="product__descr-tech ">
+                            <a class="product__tech-name tech-name" href="#">dsfsfTech</a>
+                            <a class="product__tech-shell tech-shell" href="#">wordPress</a>
+                        </div>
+                        <p class="product__descr-text">Nunc placerat mi id nisi interdum mollis. Praesent
+                            pharetra,
+                            justo
+                            ut scelerisque
+                            the mattis, leo quam aliquet congue.</p>
+                    </div>
+                    <div class="product__panel panel">
+                        <a href="#" class="product__panel-money">$10</a>
+                        <div class="product__panel-likes"><a href="#" class="lnr-heart">90</a></div>
+                        <div class="product__panel-rating panel-rating"></div>
+                        <div class="product__panel-basket"> <a href="#" class="lnr-cart">50</a></div>
+                    </div>
+                </div>
+                <div class="product__item followers-feed__item">
+                    <div class="product__item-img">
+                        <img src=" images/weekly/content/Bugatti-Chiron.jpg" alt="">
+                        <div class="product__item-extra">
+                            <a href="#" class="extra__more-info">More Info</a>
+                            <a href="#" class="extra__live-demo">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="product__descr">
+                        <h3 class="product__descr-title">E-commerce Shopping Cart</h3>
+                        <div class="product__descr-tech ">
+                            <a class="product__tech-name tech-name" href="#">dsfsfTech</a>
+                            <a class="product__tech-shell tech-shell" href="#">wordPress</a>
+                        </div>
+                        <p class="product__descr-text">Nunc placerat mi id nisi interdum mollis. Praesent
+                            pharetra,
+                            justo
+                            ut scelerisque
+                            the mattis, leo quam aliquet congue.</p>
+                    </div>
+                    <div class="product__panel panel">
+                        <a href="#" class="product__panel-money">$10</a>
+                        <div class="product__panel-likes"><a href="#" class="lnr-heart">90</a></div>
+                        <div class="product__panel-rating panel-rating"></div>
+                        <div class="product__panel-basket"> <a href="#" class="lnr-cart">50</a></div>
+                    </div>
+                </div>
+                <div class="product__item followers-feed__item">
+                    <div class="product__item-img">
+                        <img src=" images/weekly/content/Bugatti-Chiron.jpg" alt="">
+                        <div class="product__item-extra">
+                            <a href="#" class="extra__more-info">More Info</a>
+                            <a href="#" class="extra__live-demo">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="product__descr">
+                        <h3 class="product__descr-title">E-commerce Shopping Cart</h3>
+                        <div class="product__descr-tech ">
+                            <a class="product__tech-name tech-name" href="#">dsfsfTech</a>
+                            <a class="product__tech-shell tech-shell" href="#">wordPress</a>
+                        </div>
+                        <p class="product__descr-text">Nunc placerat mi id nisi interdum mollis. Praesent
+                            pharetra,
+                            justo
+                            ut scelerisque
+                            the mattis, leo quam aliquet congue.</p>
+                    </div>
+                    <div class="product__panel panel">
+                        <a href="#" class="product__panel-money">$10</a>
+                        <div class="product__panel-likes"><a href="#" class="lnr-heart">90</a></div>
+                        <div class="product__panel-rating panel-rating"></div>
+                        <div class="product__panel-basket"> <a href="#" class="lnr-cart">50</a></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="base-stats">
+        <div class="container">
+            <div class="base-stats__inner">
+                <div class="base-stats__item base-stats__item-case">
+                    <div class="base-stats__ico lnr-briefcase"></div>
+                    <div class="base-stats__number">38,436</div>
+                    <div class="base-stats__text">items for sale</div>
+                </div>
+                <div class="base-stats__item base-stats__item-cloud ">
+                    <div class="base-stats__ico lnr-cloud-download"></div>
+                    <div class="base-stats__number"> 3,736</div>
+                    <div class="base-stats__text">total sales</div>
+                </div>
+                <div class="base-stats__item base-stats__item-smile">
+                    <div class="base-stats__ico lnr-smile"></div>
+                    <div class="base-stats__number">2,736</div>
+                    <div class="base-stats__text">happy customers</div>
+                </div>
+                <div class="base-stats__item base-stats__item-users">
+                    <div class="base-stats__ico lnr-users"></div>
+                    <div class="base-stats__number">25,736</div>
+                    <div class="base-stats__text">members</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="benefits2">
+        <div class="container">
+            <div class="benefits2__top">
+                <h2 class="benefits2__top-title">Why Choose <span> MartPlace</span></h2>
+                <p class="benefits2__top-text">Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis
+                    dolores
+                    nemis
+                    omnis fugats. Lid est laborum dolo rumes fugats untras.</p>
+            </div>
+            <div class="benefits2__items">
+                <div class="benefits2__item benefits2__item-license">
+                    <div class="benefits2__item-ico lnr-license"></div>
+                    <div class="num">01</div>
+                    <h3 class="benefits2__item-title">One Time Payment</h3>
+                    <p class="benefits2__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
+                        ut
+                        scelerisque
+                        the mattis, leo quam aliquet diam
+                        congue is laoreet elit metus.</p>
+                </div>
+                <div class="benefits2__item benefits2__item-magic">
+                    <div class="benefits2__item-ico lnr-magic-wand"></div>
+                    <div class="num">02</div>
+                    <h3 class="benefits2__item-title">One Time Payment</h3>
+                    <p class="benefits2__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
+                        ut
+                        scelerisque
+                        the mattis, leo quam aliquet diam
+                        congue is laoreet elit metus.</p>
+                </div>
+                <div class="benefits2__item benefits2__item-lock">
+                    <div class="benefits2__item-ico lnr-lock"></div>
+                    <div class="num">03</div>
+                    <h3 class="benefits2__item-title">One Time Payment</h3>
+                    <p class="benefits2__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
+                        ut
+                        scelerisque
+                        the mattis, leo quam aliquet diam
+                        congue is laoreet elit metus.</p>
+                </div>
+                <div class="benefits2__item benefits2__item-cartbars">
+                    <div class="benefits2__item-ico lnr-chart-bars"></div>
+                    <div class="num">04</div>
+                    <h3 class="benefits2__item-title">One Time Payment</h3>
+                    <p class="benefits2__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
+                        ut
+                        scelerisque
+                        the mattis, leo quam aliquet diam
+                        congue is laoreet elit metus.</p>
+                </div>
+                <div class="benefits2__item benefits2__item-leaf">
+                    <div class="benefits2__item-ico lnr-leaf"></div>
+                    <div class="num">05</div>
+                    <h3 class="benefits2__item-title">One Time Payment</h3>
+                    <p class="benefits2__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
+                        ut
+                        scelerisque
+                        the mattis, leo quam aliquet diam
+                        congue is laoreet elit metus.</p>
+                </div>
+                <div class="benefits2__item benefits2__item-phone">
+                    <div class="benefits2__item-ico lnr-phone"></div>
+                    <div class="num">06</div>
+                    <h3 class="benefits2__item-title">One Time Payment</h3>
+                    <p class="benefits2__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
+                        ut
+                        scelerisque
+                        the mattis, leo quam aliquet diam
+                        congue is laoreet elit metus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+
+                <div class="footer__contacts"> <a class="footer__logo"><img src="images/header/logo.png" alt=""></a>
+                    <p class="footer__text">Nunc placerat mi id nisi interdum they mollis. Praesent pharetra,
+                        justo ut scel erisque the mattis, leo quam.</p>
+                    <a class="footer__contacts-phone" href="tel:Phone+67898752235"> Phone: +6789-875-2235</a>
+                    <a class="footer__contacts-email" href="mailto:support@aazztech.com">support@aazztech.com</a>
+                    <a class="footer__contacts-location" href="#">202 New Hampshire Avenue
+                        Northwest #100, New York-2573</a>
+                </div>
+                <div class="footer__company">
+                    <h3 class="footer__company-title footer__title">Our Company</h3>
+                    <ul class="footer__company-list footer__list">
+                        <li class="footer__list-link"><a href="#">About Us</a></li>
+                        <li class="footer__list-link"><a href="#">How It Work</a></li>
+                        <li class="footer__list-link"><a href="#">Affiliates</a></li>
+                        <li class="footer__list-link"><a href="#">Testimonials</a></li>
+                        <li class="footer__list-link"><a href="#">Contact Us</a></li>
+                        <li class="footer__list-link"><a href="#">Copyright Notice</a></li>
+                        <li class="footer__list-link"><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer__support">
+                    <h3 class="footer__title">Help Support</h3>
+                    <ul class="footer__support-list footer__list">
+                        <li class="footer__list-link"><a href="#">Support Forum</a></li>
+                        <li class="footer__list-link"><a href="#">Terms & Conditions</a></li>
+                        <li class="footer__list-link"><a href="#">Support Policy</a></li>
+                        <li class="footer__list-link"><a href="#">Refund Policy</a></li>
+                        <li class="footer__list-link"><a href="#">FAQs</a></li>
+                        <li class="footer__list-link"><a href="#">Buyers Faq</a></li>
+                        <li class="footer__list-link"><a href="#">Sellers Faq</a></li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <h3 class="footer__title">Newsletter</h3>
+                    <p class="footer__text">Subscribe to get the latest news, update and offer information. Don't worry,
+                        we won't send spam!</p>
+                    <form>
+                        <input type="text" placeholder="Enter email">
+                        <button type="submit">Submit</button>
+                    </form>
+                    <div class="footer__social-nets">
+                        <a href="#" class="icon-facebook"></a>
+                        <a href="#" class="icon-twitter"></a>
+                        <a href="#" class="icon-google"></a>
+                        <a href="#" class="icon-pinterest"></a>
+                        <a href="#" class="icon-linkedin"></a>
+                        <a href="#" class="icon-dribbble"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer__copyr">©2017 <span>MartPlace</span> . All rights reserved. Created by <span> AazzTech</span>
+        </div>
+
+
+
+        </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>

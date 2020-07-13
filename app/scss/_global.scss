@@ -17,13 +17,7 @@ li {
   padding: 0;
   list-style: none;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+* {
   margin: 0;
   padding: 0;
 }
@@ -31,9 +25,10 @@ body {
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  line-height: 24px;
 }
 .container {
-  max-width: 1200px;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -41,12 +36,48 @@ button {
   cursor: pointer;
   border: none;
 }
+.tech-name {
+  position: relative;
+  color: #000000;
+  font-size: 15px;
+  padding-left: 40px;
+  &:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: $tech;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 2px;
+    top: -6px;
+  }
+}
+.tech-shell {
+  position: relative;
+  padding-left: 25px;
+  color: $tech;
+  font-size: 15px;
+  &:before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    left: 3px;
+    top: 4px;
+  }
+}
 .products__title {
   color: #000000;
   font-size: 30px;
-  font-weight: 400;
   padding: 43px 30px;
   box-shadow: rgba(108, 111, 115, 0.1);
   border-radius: 4px;
   background-color: #ffffff;
+  font-weight: 400;
 }

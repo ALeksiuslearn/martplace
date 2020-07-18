@@ -21,6 +21,32 @@ li {
   margin: 0;
   padding: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
 body {
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
@@ -33,29 +59,25 @@ body {
   padding: 0 15px;
 }
 .container-fluid {
-  max-width: 1950px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 button {
   font-family: "Quicksand", sans-serif;
   cursor: pointer;
   border: none;
   outline: none;
+  background-color: transparent;
 }
 .tech-name {
   position: relative;
   color: #000000;
   font-size: 15px;
   padding-left: 40px;
-  &:before {
-    content: "";
+  font-weight: 400;
+  img {
     width: 30px;
     height: 30px;
-    background-color: $tech;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
     border-radius: 50%;
     position: absolute;
     left: 2px;
@@ -84,7 +106,7 @@ button {
   color: #000000;
   font-size: 30px;
   padding: 43px 30px;
-  box-shadow: rgba(108, 111, 115, 0.1);
+  box-shadow: 0 2px 30px rgba(147, 155, 168, 0.1);
   border-radius: 4px;
   background-color: #ffffff;
   font-weight: 400;

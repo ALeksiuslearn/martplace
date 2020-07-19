@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MartPlace</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header class="header">
+                <div class="header__top">
+                    <div class="container">
+                        <div class="header__top-box">
+                            <a class="header__logo"><img src="images/header/logo.png" alt=""></a>
+
+                            <div class="header__seller">
+                                <a class="header__seller-link" href="#">Become a Seller</a>
+                            </div>
+                            <div class="header__notification">
+                                <div class="header__circle-box header__alarm-box">
+                                    <a href="#" class="header__notification-alarm header__circle"><span>25</span>
+                                    </a>
+                                    <div class="header__notification-menu header__alarm-menu">
+                                        <h3 class="header__notification-menu--title header__alarm-menu--title">My
+                                            Notifications<a>View All</a></h3>
+
+                                        <ul>
+                                            <li>
+                                                <a href="#"><img src="images/extra-content/grill3.jpg" alt=""></a>
+                                                <div class="notification__alert-info">
+                                                    <a href="#" class="notification__menu-info--name
+                                                header__alarm-menu--name">Anderson</a>
+                                                    <a class="header__alarm-menu--act added-favourite" href="#"> added
+                                                        to
+                                                        Favourite</a>
+                                                    <a href="#" class="header__alarm-menu--place"> Marketify
+                                                        Coffee Shop</a>
+                                                    <a href="#" class="header__alarm-menu--date">Just now</a></div>
+
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="images/extra-content/grill2.jpg" alt=""></a>
+                                                <div class="notification__alert-info">
+                                                    <a href="#" class="notification__menu-info--name
+                                                header__alarm-menu--name">Michael Jorden</a>
+                                                    <a class="header__alarm-menu--act added-comment" href="#"> commented
+                                                        on</a>
+                                                    <a href="#" class="header__alarm-menu--place"> MartPlace Extension
+                                                        Bundle</a>
+                                                    <a href="#" class="header__alarm-menu--date">2 hours ago</a></div>
+
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="images/extra-content/grill7.jpg" alt=""></a>
+                                                <div class="notification__alert-info">
+                                                    <a href="#" class="notification__menu-info--name
+                                                header__alarm-menu--name">Moshed</a>
+                                                    <a class="header__alarm-menu--act added-purchased"
+                                                        href="#">Purchased</a>
+                                                    <a href="#" class="header__alarm-menu--place">Bryson-Responsive
+                                                        Template</a>
+                                                    <a href="#" class="header__alarm-menu--date">6 hours ago</a></div>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="images/extra-content/grill5.jpg" alt=""></a>
+                                                <div class="notification__alert-info">
+                                                    <a href="#" class="notification__menu-info--name
+                                                header__alarm-menu--name">Tamim</a>
+                                                    <a class="header__alarm-menu--act added-review" href="#">wrote a
+                                                        review
+                                                        on</a>
+                                                    <a href="#" class="header__alarm-menu--place">Rida-Responsive vCard
+                                                        Temp...</a>
+                                                    <a href="#" class="header__alarm-menu--date">2 days ago</a></div>
+
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="header__circle-box header__envelope-box">
+                                    <a href="#" class="header__notification-email header__circle"><span>6</span></a>
+                                    <div class="header__notification-menu header__envelope-menu">
+                                        <h3 class="header__notification-menu--title">My Notifications<a>View All</a>
+                                        </h3>
+                                        <ul>
+                                            <li>
+                                                <a href="#"><img src="images/face/face2.jpg" alt=""></a>
+                                                <div class="notification__menu-info">
+
+                                                    <a href="#" class="notification__menu-info--name
+                                                notification__menu-message_new">Washim <span></span> </a>
+                                                    <a class="date__header not-viewed">Just now</a>
+
+                                                    <a href="#" class="notification__menu-info--text">Hello John Smith!
+                                                        Nunc
+                                                        placerat
+                                                        id...</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="images/face/face3.jpg" alt=""></a>
+                                                <div class="notification__menu-info"><a href="#" class="notification__menu-info--name
+                                                notification__menu-message_new">Bulbul Ahmed <span></span></a>
+                                                    <a class="date__header not-viewed">2 hours ago</a><a href="#"
+                                                        class="notification__menu-info--text">Hello John Smith! Nunc
+                                                        placerat
+                                                        id...</a></div>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="images/face/face4.jpg" alt=""></a>
+                                                <div class="notification__menu-info">
+                                                    <a href="#" class="notification__menu-info--name
+                                                notification__menu-resend">EchoTheme <span></span> </a>
+                                                    <a class="date__header viewed">Jul 16</a>
+                                                    <a href="#" class="notification__menu-info--text">Hello John Smith!
+                                                        Nunc
+                                                        placerat
+                                                        id...</a></div>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="images/face/face.jpg" alt=""></a>
+                                                <div class="notification__menu-info"><a href="#"
+                                                        class="notification__menu-info--name">Themeluva</a>
+                                                    <a class="date__header viewed">May 23</a>
+                                                    <a href="#" class="notification__menu-info--text">Hello John Smith!
+                                                        Nunc
+                                                        placerat
+                                                        id...</a></div>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="images/extra-content/grill5.jpg" alt=""></a>
+                                                <div class="notification__menu-info"><a href="#"
+                                                        class="notification__menu-info--name">Adnan</a>
+                                                    <a class="date__header viewed">Mar 26</a>
+                                                    <a href="#" class="notification__menu-info--text">Hello John Smith!
+                                                        Nunc
+                                                        placerat
+                                                        id...</a></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="header__circle-box header__basket-box"> <a href="#"
+                                        class="header__notification-basket header__circle"><span>2</span></a>
+                                    <div class="header__notification-menu header__basket-menu">
+                                        <ul>
+                                            <li>
+                                                <a href="#"><img src="images/extra-content/grill6.jpg" alt=""></a>
+                                                <div class="basket__menu-info basket__menu-info">
+                                                    <a href="#"
+                                                        class="notification__menu-info--name basket__menu-name">Finance
+                                                        and
+                                                        Consulting
+                                                        Business Theme</a>
+                                                    <button class="menu__remove-item" type="submit"></button>
+                                                    <a
+                                                        class="weekly__tech-shell tech-shell basket__menu-tech">WordPress</a>
+                                                    <div class="product__panel-money basket__menu-price">$60</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="images/extra-content/grill4.jpg" alt=""></a>
+                                                <div class="basket__menu-info basket__menu-info">
+                                                    <a href="#"
+                                                        class="notification__menu-info--name basket__menu-name">Finance
+                                                        and
+                                                        Consulting
+                                                        Business Theme</a>
+                                                    <button class="menu__remove-item" type="submit"></button>
+                                                    <a
+                                                        class="weekly__tech-shell tech-shell basket__menu-tech">WordPress</a>
+                                                    <div class="product__panel-money basket__menu-price">$60</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="total">Total:<span> $80</span></div>
+
+                                        <div class="notification__basket-purchase">
+                                            <a class="notification__gotocart" href="#">Go to Cart</a>
+                                            <a class="notification__gotocheckout" href="#">Go to Checkout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="account__box">
+                                <div class="header__account">
+                                    <a class="header__account-img" style="background-image:url(images/face/face5.jpg)"
+                                        href="#">
+                                    </a>
+                                    <div class="header__account-data">
+                                        <a class="header__account-name" href="#">Taofiq Hakim</a>
+                                        <a class="header__account-balance" href="#"> $20.45</a>
+                                    </div>
+                                </div>
+                                <div class="account__menu">
+                                    <ul class="">
+                                        <li><a class="lnr-user" href="#"> Profile Page</a></li>
+                                        <li><a class="lnr-home" href="#"> Dashboard</a></li>
+                                        <li><a class="lnr-cog" href="#">Account Settings</a></li>
+                                        <li><a class="lnr-cart" href="#">Your Purchases</a></li>
+                                        <li><a class="lnr-heart" href="#">Your Favorites</a></li>
+                                        <li><a class="lnr-dice" href="#">Add Credits</a></li>
+                                        <li><a class="lnr-chart-bars" href="#">Sales Statements</a></li>
+                                        <li><a class="lnr-upload" href="#">Upload Item</a></li>
+                                        <li><a class="lnr-book" href="#">Edit Item</a></li>
+                                        <li><a class="lnr-briefcase" href="#">Withdrawals</a></li>
+                                        <li><a class="lnr-exit" href="#">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <div class="container">
+                        <div class="header__inner">
+                            <nav class="menu">
+                                <ul class="menu__list">
+                                    <li class="menu__list-item"><a class="menu__list-link" href="#">HOME</a></li>
+                                    <li class="menu__list-item"><a class="menu__list-link" href="#">all products</a>
+                                    </li>
+                                    <li class="menu__list-item"><a class="menu__list-link" href="#">wordpress</a>
+                                    </li>
+                                    <li class="menu__list-item"><a class="menu__list-link" href="#">festures</a>
+                                    </li>
+                                    <li class="menu__list-item"><a class="menu__list-link" href="#">Pages</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="header__search">
+                                <form>
+                                    <input type="text" placeholder="Search product here..." required>
+                                    <button type="submit"><img src="images/header/icons/loop.png" alt=""></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <section class="category-page" style="background-image:url(images/page2/category-page-bg.jpg)">
+                <div class="contaier">
+                    <div class="category-page__title"><span>4,572</span> wordpress themes, made with love</div>
+                    <div class="header__search category-page__search">
+                        <form>
+                            <input type="text" placeholder="Search your products" required>
+                            <button type="submit">Search</button>
+                        </form>
+                    </div>
+                    <div class="category-page__breadcrumbs breadcrumbs">
+                        <a href="#">Home</a>
+                        <span href="">Category Page Grid</span>
+
+                    </div>
+                </div>
+            </section>
+            <section class="categories">
+                <div class="categories__top">
+                    <div class="container">
+                        <div class="categories__top-inner">
+                            <div class="categories__top-products">
+                                <a class="categories__top-new_products" href="#">New Products</a>
+                                <a class="categories__top-popular_products" href="#">Popular Products</a>
+                            </div>
+                            <div class="categories__top-filter">
+
+                                <div class="controls">
+                                    <!-- <form>
+                                        <label>Sort:</label>
+                                    <select id="sortselect">
+                                            <option value="myorder:asc">Price : Low to High</option>
+                                            <option value="myorder:desc">Price : high to Low</option>
+                                        </select>
+                                    </form> -->
+                                    <div class="price-sort">
+                                        <button class="low-high" data-sort="price:asc" type="button">Price : Low to
+                                            High</button>
+                                        <button class="high-low" data-sort="price:desc" type="button">Price : High to
+                                            Low</button>
+                                    </div>
+                                </div>
+                                <div class="abount-filter">
+                                    <select name="amount-filter" id="itemsperpage">12 Items Per Page
+                                        <option value="myorder:asc">12 Items Per Page</option>
+                                        <option value="myorder:desc">14 Items Per Page</option>
+                                    </select>
+                                </div>
+                                <div class="direction-change">
+                                    <button class="icon-grid1 active" type=" button"></button>
+                                    <button class="lnr-list" type="button"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="categories__inner">
+            <div class="container">
+                <div class="categories__box">
+                    <aside class="categories__aside">
+                        <div class="categories__aside-items">
+                            <div class="categories__aside-item categories-name">
+                                <button type="button"
+                                    class="categories__aside-item--title category-title">Categories</button>
+                                <ul>
+                                    <li><a class="aside__item-link categories-link active" href="#">WordPress
+                                            <span>35</span> </a></li>
+                                    <li><a class="aside__item-link categories-link" href="#">Landing
+                                            Page<span>35</span></a></li>
+                                    <li><a class="aside__item-link categories-link" href="#">Plugins<span>35</span></a>
+                                    </li>
+                                    <li><a class="aside__item-link categories-link" href="#">Psd
+                                            Template<span>35</span></a></li>
+                                    <li><a class="aside__item-link categories-link" href="#">HTML
+                                            Template<span>35</span></a></li>
+                                    <li><a class="aside__item-link categories-link"
+                                            href="#">Components<span>35</span></a></li>
+                                    <li><a class="aside__item-link categories-link" href="#">Joomla
+                                            Template<span>35</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="categories__aside-item filter-products">
+                                <button type="button" class="categories__aside-item--title filter-title">Filter
+                                    Products</button>
+                                <ul>
+                                    <li><a class="aside__item-link filter-products-link" href="#">Trending
+                                            Products</a>
+                                    </li>
+                                    <li><a class="aside__item-link filter-products-link" href="#">Popular
+                                            Products</a></li>
+                                    <li><a class="aside__item-link filter-products-link" href="#">New
+                                            Products</a>
+                                    </li>
+                                    <li><a class="aside__item-link filter-products-link" href="#">Best
+                                            Seller</a>
+                                    </li>
+                                    <li><a class="aside__item-link filter-products-link" href="#">Best
+                                            Rating</a>
+                                    </li>
+                                    <li><a class="aside__item-link filter-products-link" href="#">Low Price</a>
+                                    </li>
+                                    <li><a class="aside__item-link filter-products-link" href="#">High Price</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="categories__aside-item price-range price_range-products ">
+                                <button class="categories__aside-item--title price_range-title">Pricing Range</button>
+
+                                <form>
+                                    <input type="text" class="js-range-slider" name="my_range" value="" />
+                                    <button class="search-update" type="submit">Search Update</button>
+                                </form>
+
+                            </div>
+                        </div>
+                    </aside>
+                    <div class="categories__items">
+                        <div class="product__item categories__item mix" data-price="7">
+                            <div class=" product__item-img">
+                                <img src="images/extra-content/grill3.jpg" alt="">
+                                <div class="product__item-extra">
+                                    <a href="#" class="extra__more-info">More Info</a>
+                                    <a href="#" class="extra__live-demo">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="product__descr">
+                                <a class="product__descr-title" href="#">Finance and Consulting
+                                    Business Theme</a>
+
+                                <a class="product__tech-name tech-name" href="#">Theme-Valley <img
+                                        src="images/extra-content/grill6.jpg" alt=""></a>
+                            </div>
+                            <div class="product__middle">
+                                <p>Nunc placerat mi id nisi inter dum mollis. Praesent phare...</p>
+                                <div class="middle__panel">
+                                    <div class="product__panel-likes"><a href="#" class="lnr-heart"></a>
+                                        <div class="loves">90 loves</div>
+                                    </div>
+
+                                    <div class="panel-comments"><a href="#" class="lnr-bubble"> </a>
+                                        <div class="comments">90
+                                            Comments</div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="product__descr-tech ">
+                                <div class="product__panel-rating panel-rating" data-rateyo-rating="4.5">
+                                </div><span class="panel-rating--span">(34)</span>
+                                <div class="product__panel-basket"> <a href="#" class="lnr-cart">50</a>
+                                </div>
+                            </div>
+                            <div class="product__panel panel">
+                                <div class="product__panel-money">$115</div>
+                                <a class="product__tech-shell tech-shell" href="#">wordPress</a>
+                            </div>
+                        </div>
+                        <div class="product__item categories__item mix" data-price="6">
+                            <div class=" product__item-img">
+                                <img src="images/extra-content/grill2.jpg" alt="">
+                                <div class="product__item-extra">
+                                    <a href="#" class="extra__more-info">More Info</a>
+                                    <a href="#" class="extra__live-demo">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="product__descr">
+                                <a class="product__descr-title" href="#">Finance and Consulting
+                                    Business Theme</a>
+
+                                <a class="product__tech-name tech-name" href="#">Artcorner <img
+                                        src="images/extra-content/grill6.jpg" alt=""></a>
+                            </div>
+                            <div class="product__middle">
+                                <p>Nunc placerat mi id nisi inter dum mollis. Praesent phare...</p>
+                                <div class="middle__panel">
+                                    <div class="product__panel-likes"><a href="#" class="lnr-heart"></a>
+                                        <div class="loves">90 loves</div>
+                                    </div>
+
+                                    <div class="panel-comments"><a href="#" class="lnr-bubble"> </a>
+                                        <div class="comments">90
+                                            Comments</div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="product__descr-tech ">
+                                <div class="product__panel-rating panel-rating" data-rateyo-rating="4.5">
+                                </div><span class="panel-rating--span">(34)</span>
+                                <div class="product__panel-basket"> <a href="#" class="lnr-cart">50</a>
+                                </div>
+                            </div>
+                            <div class="product__panel panel">
+                                <div class="product__panel-money">$115</div>
+                                <a class="product__tech-shell tech-shell" href="#">wordPress</a>
+                            </div>
+                        </div>
+                        <div class="product__item categories__item mix" data-price="11">
+                            <div class=" product__item-img">
+                                <img src="images/extra-content/grill.jpg" alt="">
+                                <div class="product__item-extra">
+                                    <a href="#" class="extra__more-info">More Info</a>
+                                    <a href="#" class="extra__live-demo">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="product__descr">
+                                <a class="product__descr-title" href="#">Finance and Consulting
+                                    Business Theme</a>
+
+                                <a class="product__tech-name tech-name" href="#">Theme-Valley <img
+                                        src="images/extra-content/grill3.jpg" alt=""></a>
+                            </div>
+
+                            <div class="product__middle">
+                                <p>Nunc placerat mi id nisi inter dum mollis. Praesent phare...</p>
+                                <div class="middle__panel">
+                                    <div class="product__panel-likes"><a href="#" class="lnr-heart"></a>
+                                        <div class="loves">90 loves</div>
+                                    </div>
+
+                                    <div class="panel-comments"><a href="#" class="lnr-bubble"> </a>
+                                        <div class="comments">90
+                                            Comments</div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="product__descr-tech ">
+                                <div class="product__panel-rating panel-rating" data-rateyo-rating="4.5">
+                                </div><span class="panel-rating--span">(34)</span>
+                                <div class="product__panel-basket"> <a href="#" class="lnr-cart">50</a>
+                                </div>
+                            </div>
+                            <div class="product__panel panel">
+                                <div class="product__panel-money">$115</div>
+                                <a class="product__tech-shell tech-shell" href="#">wordPress</a>
+                            </div>
+                        </div>
+                        <div class="product__item categories__item mix" data-price="22">
+                            <div class=" product__item-img">
+                                <img src="images/extra-content/grill3.jpg" alt="">
+                                <div class="product__item-extra">
+                                    <a href="#" class="extra__more-info">More Info</a>
+                                    <a href="#" class="extra__live-demo">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="product__descr">
+                                <a class="product__descr-title" href="#">Finance and Consulting
+                                    Business Theme</a>
+
+                                <a class="product__tech-name tech-name" href="#">Theme-Valley <img
+                                        src="images/extra-content/grill6.jpg" alt=""></a>
+                            </div>
+
+                            <div class="product__middle">
+                                <p>Nunc placerat mi id nisi inter dum mollis. Praesent phare...</p>
+                                <div class="middle__panel">
+                                    <div class="product__panel-likes"><a href="#" class="lnr-heart"></a>
+                                        <div class="loves">90 loves</div>
+                                    </div>
+
+                                    <div class="panel-comments"><a href="#" class="lnr-bubble"> </a>
+                                        <div class="comments">90
+                                            Comments</div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="product__descr-tech ">
+                                <div class="product__panel-rating panel-rating" data-rateyo-rating="4.5">
+                                </div><span class="panel-rating--span">(34)</span>
+                                <div class="product__panel-basket"> <a href="#" class="lnr-cart">50</a>
+                                </div>
+                            </div>
+                            <div class="product__panel panel">
+                                <div class="product__panel-money">$115</div>
+                                <a class="product__tech-shell tech-shell" href="#">wordPress</a>
+                            </div>
+                        </div>
+
+
+                        <div class="product__item categories__item mix" data-price="111">
+                            <div class=" product__item-img">
+                                <img src="images/extra-content/grill2.jpg" alt="">
+                                <div class="product__item-extra">
+                                    <a href="#" class="extra__more-info">More Info</a>
+                                    <a href="#" class="extra__live-demo">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="product__descr">
+                                <a class="product__descr-title" href="#">Finance and Consulting
+                                    Business Theme</h3>
+
+                                    <a class="product__tech-name tech-name" href="#">Artcorner <img
+                                            src="images/extra-content/grill6.jpg" alt=""></a>
+                            </div>
+
+                            <div class="product__middle">
+                                <p>Nunc placerat mi id nisi inter dum mollis. Praesent phare...</p>
+                                <div class="middle__panel">
+                                    <div class="product__panel-likes"><a href="#" class="lnr-heart"></a>
+                                        <div class="loves">90 loves</div>
+                                    </div>
+
+                                    <div class="panel-comments"><a href="#" class="lnr-bubble"> </a>
+                                        <div class="comments">90
+                                            Comments</div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="product__descr-tech ">
+                                <div class="product__panel-rating panel-rating" data-rateyo-rating="4.5">
+                                </div><span class="panel-rating--span">(34)</span>
+                                <div class="product__panel-basket"> <a href="#" class="lnr-cart">50</a>
+                                </div>
+                            </div>
+                            <div class="product__panel panel">
+                                <div class="product__panel-money">$115</div>
+                                <a class="product__tech-shell tech-shell" href="#">wordPress</a>
+                            </div>
+                        </div>
+
+
+                        <div class="product__item categories__item mix" data-price="70">
+                            <div class=" product__item-img">
+                                <img src="images/extra-content/grill.jpg" alt="">
+                                <div class="product__item-extra">
+                                    <a href="#" class="extra__more-info">More Info</a>
+                                    <a href="#" class="extra__live-demo">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="product__descr">
+                                <a class="product__descr-title" href="#">Finance and Consulting
+                                    Business Theme</a>
+
+                                <a class="product__tech-name tech-name" href="#">Theme-Valley <img
+                                        src="images/extra-content/grill3.jpg" alt=""></a>
+                            </div>
+
+                            <div class="product__middle">
+                                <p>Nunc placerat mi id nisi inter dum mollis. Praesent phare...</p>
+                                <div class="middle__panel">
+                                    <div class="product__panel-likes"><a href="#" class="lnr-heart"></a>
+                                        <div class="loves">90 loves</div>
+                                    </div>
+
+                                    <div class="panel-comments"><a href="#" class="lnr-bubble"> </a>
+                                        <div class="comments">90
+                                            Comments</div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="product__descr-tech ">
+                                <div class="product__panel-rating panel-rating" data-rateyo-rating="4.5">
+                                </div><span class="panel-rating--span">(34)</span>
+                                <div class="product__panel-basket"> <a href="#" class="lnr-cart">50</a>
+                                </div>
+                            </div>
+                            <div class="product__panel panel">
+                                <div class="product__panel-money">$115</div>
+                                <a class="product__tech-shell tech-shell" href="#">wordPress</a>
+                            </div>
+                        </div>
+
+
+                        <div class="product__item categories__item mix" data-price="77">
+                            <div class=" product__item-img">
+                                <img src="images/extra-content/grill3.jpg" alt="">
+                                <div class="product__item-extra">
+                                    <a href="#" class="extra__more-info">More Info</a>
+                                    <a href="#" class="extra__live-demo">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="product__descr">
+                                <a class="product__descr-title" href="#">Finance and Consulting
+                                    Business Theme</a>
+
+                                <a class="product__tech-name tech-name" href="#">Theme-Valley <img
+                                        src="images/extra-content/grill6.jpg" alt=""></a>
+                            </div>
+
+                            <div class="product__middle">
+                                <p>Nunc placerat mi id nisi inter dum mollis. Praesent phare...</p>
+                                <div class="middle__panel">
+                                    <div class="product__panel-likes"><a href="#" class="lnr-heart"></a>
+                                        <div class="loves">90 loves</div>
+                                    </div>
+
+                                    <div class="panel-comments"><a href="#" class="lnr-bubble"> </a>
+                                        <div class="comments">90
+                                            Comments</div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="product__descr-tech ">
+                                <div class="product__panel-rating panel-rating" data-rateyo-rating="4.5">
+                                </div><span class="panel-rating--span">(34)</span>
+                                <div class="product__panel-basket"> <a href="#" class="lnr-cart">50</a>
+                                </div>
+                            </div>
+                            <div class="product__panel panel">
+                                <div class="product__panel-money">$115</div>
+                                <a class="product__tech-shell tech-shell" href="#">wordPress</a>
+                            </div>
+                        </div>
+
+
+                        <div class="product__item categories__item mix" data-myorder="7">
+                            <div class=" product__item-img">
+                                <img src="images/extra-content/grill2.jpg" alt="">
+                                <div class="product__item-extra">
+                                    <a href="#" class="extra__more-info">More Info</a>
+                                    <a href="#" class="extra__live-demo">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="product__descr">
+                                <a class="product__descr-title" href="#">Finance and Consulting
+                                    Business Theme</a>
+
+                                <a class="product__tech-name tech-name" href="#">Artcorner <img
+                                        src="images/extra-content/grill6.jpg" alt=""></a>
+                            </div>
+
+                            <div class="product__middle">
+                                <p>Nunc placerat mi id nisi inter dum mollis. Praesent phare...</p>
+                                <div class="middle__panel">
+                                    <div class="product__panel-likes"><a href="#" class="lnr-heart"></a>
+                                        <div class="loves">90 loves</div>
+                                    </div>
+
+                                    <div class="panel-comments"><a href="#" class="lnr-bubble"> </a>
+                                        <div class="comments">90
+                                            Comments</div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="product__descr-tech ">
+                                <div class="product__panel-rating panel-rating" data-rateyo-rating="4.5">
+                                </div><span class="panel-rating--span">(34)</span>
+                                <div class="product__panel-basket"> <a href="#" class="lnr-cart">50</a>
+                                </div>
+                            </div>
+                            <div class="product__panel panel">
+                                <div class="product__panel-money">$115</div>
+                                <a class="product__tech-shell tech-shell" href="#">wordPress</a>
+                            </div>
+                        </div>
+                        <div class="product__item categories__item" data-myorder="7">
+                            <div class=" product__item-img">
+                                <img src="images/extra-content/grill.jpg" alt="">
+                                <div class="product__item-extra">
+                                    <a href="#" class="extra__more-info">More Info</a>
+                                    <a href="#" class="extra__live-demo">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="product__descr">
+                                <a class="product__descr-title" href="#">Finance and Consulting
+                                    Business Theme</a>
+
+                                <a class="product__tech-name tech-name" href="#">Theme-Valley <img
+                                        src="images/extra-content/grill3.jpg" alt=""></a>
+                            </div>
+
+                            <div class="product__middle">
+                                <p>Nunc placerat mi id nisi inter dum mollis. Praesent phare...</p>
+                                <div class="middle__panel">
+                                    <div class="product__panel-likes"><a href="#" class="lnr-heart"></a>
+                                        <div class="loves">90 loves</div>
+                                    </div>
+
+                                    <div class="panel-comments"><a href="#" class="lnr-bubble"> </a>
+                                        <div class="comments">90
+                                            Comments</div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="product__descr-tech ">
+                                <div class="product__panel-rating panel-rating" data-rateyo-rating="4.5">
+                                </div><span class="panel-rating--span">(34)</span>
+                                <div class="product__panel-basket"> <a href="#" class="lnr-cart">50</a>
+                                </div>
+                            </div>
+                            <div class="product__panel panel">
+                                <div class="product__panel-money">$115</div>
+                                <a class="product__tech-shell tech-shell" href="#">wordPress</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="pagination">
+                    <ul class="pagination__list">
+                        <li><a class="pagination-prev" href="#"></a></li>
+                        <li><a class="pagination-current" href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a class="pagination-next" href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+
+                <div class="footer__contacts"> <a class="footer__logo"><img src="images/header/logo.png" alt=""></a>
+                    <p class="footer__text">Nunc placerat mi id nisi interdum they mollis. Praesent pharetra,
+                        justo ut scel erisque the mattis, leo quam.</p>
+                    <a class="footer__contacts-phone" href="tel:Phone+67898752235"> Phone: +6789-875-2235</a>
+                    <a class="footer__contacts-email" href="mailto:support@aazztech.com">support@aazztech.com</a>
+                    <a class="footer__contacts-location" href="#">202 New Hampshire Avenue
+                        Northwest #100, New York-2573</a>
+                </div>
+                <div class="footer__company">
+                    <h3 class="footer__company-title footer__title">Our Company</h3>
+                    <ul class="footer__company-list footer__list">
+                        <li class="footer__list-link"><a href="#">About Us</a></li>
+                        <li class="footer__list-link"><a href="#">How It Work</a></li>
+                        <li class="footer__list-link"><a href="#">Affiliates</a></li>
+                        <li class="footer__list-link"><a href="#">Testimonials</a></li>
+                        <li class="footer__list-link"><a href="#">Contact Us</a></li>
+                        <li class="footer__list-link"><a href="#">Copyright Notice</a></li>
+                        <li class="footer__list-link"><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer__support">
+                    <h3 class="footer__title">Help Support</h3>
+                    <ul class="footer__support-list footer__list">
+                        <li class="footer__list-link"><a href="#">Support Forum</a></li>
+                        <li class="footer__list-link"><a href="#">Terms & Conditions</a></li>
+                        <li class="footer__list-link"><a href="#">Support Policy</a></li>
+                        <li class="footer__list-link"><a href="#">Refund Policy</a></li>
+                        <li class="footer__list-link"><a href="#">FAQs</a></li>
+                        <li class="footer__list-link"><a href="#">Buyers Faq</a></li>
+                        <li class="footer__list-link"><a href="#">Sellers Faq</a></li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <h3 class="footer__title">Newsletter</h3>
+                    <p class="footer__text">Subscribe to get the latest news, update and offer information. Don't
+                        worry,
+                        we won't send spam!</p>
+                    <form>
+                        <input type="text" placeholder="Enter email">
+                        <button type="submit">Submit</button>
+                    </form>
+                    <div class="footer__social-nets">
+                        <a href="#" class="icon-facebook"></a>
+                        <a href="#" class="icon-twitter"></a>
+                        <a href="#" class="icon-google"></a>
+                        <a href="#" class="icon-pinterest"></a>
+                        <a href="#" class="icon-linkedin"></a>
+                        <a href="#" class="icon-dribbble"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__copyr">©2017 <span>MartPlace</span> . All rights reserved. Created by <span>
+                AazzTech</span>
+        </div>
+    </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

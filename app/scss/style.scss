@@ -152,6 +152,10 @@
     }
   }
 }
+
+.user__ico {
+  display: none;
+}
 .header__notification {
   display: flex;
   justify-content: space-between;
@@ -681,6 +685,9 @@
     top: 1px;
     right: 1px;
     border: none;
+    img {
+      width: 16px;
+    }
   }
 }
 
@@ -2263,7 +2270,7 @@ button {
     overflow: hidden;
     &-img {
       img {
-        max-width: 255px;
+        width: 260px;
         height: 160px;
         object-fit: cover;
       }

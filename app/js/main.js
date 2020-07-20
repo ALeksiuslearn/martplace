@@ -95,4 +95,13 @@ $(function () {
   $(".price_range-title").on("click", function () {
     $(".price_range-products").toggleClass("open");
   });
+  $(".menu__btn").on("click", function () {
+    $(".menu__list").slideToggle();
+  });
+  $(".user__ico").on("click", function () {
+    $(".header__notification").toggleClass("active");
+  });
+  $(".user__ico").on("click", function () {
+    $(".account__box").toggleClass("active");
+  });
 });

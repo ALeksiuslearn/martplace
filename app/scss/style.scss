@@ -16,10 +16,6 @@
   height: 100px;
 }
 
-.header__logo {
-  margin-left: 80px;
-}
-
 .header__seller {
   margin-left: auto;
 
@@ -627,7 +623,6 @@
 }
 
 .menu {
-  padding-left: 40px;
   a,
   span {
     color: #333333;
@@ -639,7 +634,9 @@
   &__list-item {
     text-transform: uppercase;
     display: inline-block;
-    margin-left: 20px;
+    & + li {
+      margin-left: 20px;
+    }
   }
 
   &__list-link {
@@ -1260,16 +1257,32 @@
 .followers-feed {
   background-color: #eff1f5;
   padding: 120px 0;
+  .slick-current,
+  .slick-active {
+    width: 390px !important;
+  }
+
+  .slick-track {
+    height: 280px;
+  }
 
   &__items {
     width: 100%;
     margin-top: 30px;
+  }
+  &__item {
+    width: 362px;
+    min-height: 560px;
   }
 
   .slick-arrow {
     top: -105px;
     background-color: #0674ec;
   }
+}
+
+.followers__feed-item--wrapper {
+  width: 100%;
 }
 //========= base-stats START====
 .base-stats {
@@ -1415,18 +1428,22 @@
   display: flex;
   justify-content: space-between;
   text-align: center;
+  height: 560px;
 }
 .options__item {
   padding: 100px 195px;
-  img {
-    padding-bottom: 35px;
+  min-width: 50%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &-img {
+    padding-bottom: 45px;
   }
-  &-sell {
-    background-color: $linkbg;
-  }
-  &-buy {
-    background-color: $tech;
-  }
+
   a {
     width: 190px;
     height: 55px;
@@ -1447,12 +1464,12 @@
   padding-bottom: 15px;
 }
 .options__text {
-  // Style for "Nunc place"
   letter-spacing: 0.2px;
   color: #ffffff;
   font-size: 16px;
   font-weight: 400;
   padding-bottom: 45px;
+  max-width: 576px;
 }
 .options__buy-link {
   color: $linkbg;
@@ -1475,6 +1492,9 @@
 
 .clients-feedback {
   padding: 120px 0;
+}
+.clients-feedback__item-wrapper {
+  padding: 15px;
 }
 .clients-feedback__items {
   padding-bottom: 60px;
@@ -1530,7 +1550,6 @@
   background-color: #ffffff;
   padding: 50px 40px;
   border-left: 2px solid $linkbg;
-  margin-right: 30px;
   &-text {
     columns: #555555;
     line-height: 30px;
@@ -2500,4 +2519,10 @@ button {
 ///======== section categories END=========
 ///======== section categories START=========
 ///======== section categories END=========
+@import "contacts";
+@import "prising-plan";
+@import "page-404";
+@import "single-product2";
+@import "terms-conditions";
+@import "how-it-work";
 @import "media";

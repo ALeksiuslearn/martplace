@@ -1,3 +1,16 @@
+@media (max-width: 1200px) {
+  // pricing-plan
+  .pricing__item {
+    min-width: 45%;
+    & + .pricing__item {
+      margin-left: 0px;
+    }
+  }
+
+  .pricing__agency {
+    margin-top: 30px;
+  }
+}
 @media (max-width: 1041px) {
   .menu__list {
     display: none;
@@ -170,6 +183,17 @@
   }
 }
 
+@media (max-width: 800px) {
+  // pricing-plan
+
+  .pricing__item {
+    min-width: 100%;
+  }
+  .pricing__agency,
+  .pricing__business {
+    margin-top: 30px;
+  }
+}
 @media (max-width: 700px) {
   .header__notification.active {
     transition: 1s;

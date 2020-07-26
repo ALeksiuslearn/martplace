@@ -23,6 +23,7 @@
                             <div class="header__seller">
                                 <a class="header__seller-link" href="#">Become a Seller</a>
                             </div>
+                            <div class="user__ico"></div>
                             <div class="header__notification">
                                 <div class="header__circle-box header__alarm-box">
                                     <a href="#" class="header__notification-alarm header__circle"><span>25</span>
@@ -224,6 +225,7 @@
                     <div class="container">
                         <div class="header__inner">
                             <nav class="menu">
+                                <div class="menu__btn"></div>
                                 <ul class="menu__list">
                                     <li class="menu__list-item"><a class="menu__list-link" href="#">HOME</a></li>
                                     <li class="menu__list-item"><a class="menu__list-link" href="#">all products</a>
@@ -236,24 +238,71 @@
                                     </li>
                                 </ul>
                             </nav>
+                            <div class="header__search-btn"></div>
                             <div class="header__search">
-                                <form>
+                                <form class="header__search-form">
                                     <input type="text" placeholder="Search product here..." required>
                                     <button type="submit"><img src="images/header/icons/loop.png" alt=""></button>
                                 </form>
+
                             </div>
                         </div>
                     </div>
                 </div>
 
             </header>
+            <div class="contact-us"
+                style="background-image: linear-gradient(to left, #0d3ef2 0%, #4c1f9c 100%); opacity: 0.9;">
+                <div class="container">
+                    <h2 class="contact-us__title">Contact Us</h2>
+                    <h3 class="contact-us__title-small">You came to the right place</h3>
+                </div>
+            </div>
+            <section class="contact">
+                <div class="container">
+                    <h2 class="color__title"> How can We<span>Help?</span></h2>
+                    <p class="casual__text">Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores
+                        nemis omnis fugats. Lid est laborum dolo rumes fugats untras.</p>
+                    <div class="contact__items">
+                        <div class="contact__item">
+                            <img src="images/contact/lnr-map-marker.svg" alt="">
+                            <h3 class="contacts__item-name">Office Address</h3>
+                            <div class="contacts__item-add">202 New Hampshire Avenue
+                                Northwest #100, New York-2573</div>
+                        </div>
+                        <div class="contact__item">
+                            <div class="phone-ico ico__item"></div>
+                            <h3 class="contacts__item-name">Phone Number</h3>
+                            <div class="contacts__item-add contacts__item-add--phone">1-800-643-4500
+                                1-800-643-4500</div>
+                        </div>
+                        <div class="contact__item">
+                            <div class="email-ico ico__item"></div>
+                            <h3 class="contacts__item-name">Email Address</h3>
+                            <div class="contacts__item-add">support@aazztech.com
+                                support@aazztech.com</div>
+                        </div>
+                    </div>
 
+                    <div class="contact__form">
+                        <h3 class="contact__form-title">Leave Your Messages</h3>
+                        <form action="#">
+                            <input type="text" placeholder="Name" required>
+                            <input type="text" placeholder="Email" required>
+                            <input type="text" placeholder="Subject" required>
+                            <input type="text" placeholder="Phone" required>
+                            <textarea placeholder="Your text here..." required></textarea>
+                            <button class="content__link" type="submit">Send Request</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </div>
         <footer class="footer">
             <div class="container">
                 <div class="footer__inner">
 
-                    <div class="footer__contacts"> <a class="footer__logo"><img src="images/header/logo.png" alt=""></a>
+                    <div class="footer__contacts"> <a class="footer__logo"><img src="images/logo-footer.png" alt=""></a>
                         <p class="footer__text">Nunc placerat mi id nisi interdum they mollis. Praesent pharetra,
                             justo ut scel erisque the mattis, leo quam.</p>
                         <a class="footer__contacts-phone" href="tel:Phone+67898752235"> Phone: +6789-875-2235</a>
@@ -306,8 +355,11 @@
                 </div>
             </div>
 
-            <div class="footer__copyr">©2017 <span>MartPlace</span> . All rights reserved. Created by <span>
-                    AazzTech</span>
+            <div class="footer__copyr">
+                <p>©2017 <a>MartPlace</a>
+                    . All rights reserved. </p>
+                <p>Created by <a>
+                        AazzTech</a></p>
             </div>
         </footer>
     </div>

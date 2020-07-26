@@ -1,0 +1,157 @@
+.pricing {
+  padding: 120px 0 120px;
+}
+.pricing__items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.pricing__item {
+  max-width: 360px;
+  min-height: 570px;
+  box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding: 30px;
+  & + .pricing__item {
+    margin-left: 30px;
+  }
+}
+.pricing__starter {
+  border-top: 3px solid #ff6a6c;
+}
+.pricing__business {
+  border-top: 3px solid #0674ed;
+}
+.pricing__agency {
+  border-top: 3px solid #feb71d;
+}
+.pricing__item-title {
+  text-align: center;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e8ebf0;
+}
+.pricing__item-price {
+  text-align: center;
+  font-size: 36px;
+  color: #000000;
+  line-height: 40px;
+  padding: 25px 0 50px 0;
+  sup {
+    color: #000000;
+    font-size: 18px;
+    top: -13px;
+  }
+  sub {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+    bottom: 0;
+  }
+}
+.pricing__list {
+  li {
+    list-style-type: none;
+    color: #555555;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+
+    span {
+      color: #000000;
+      font-weight: 500;
+    }
+  }
+  .pricing__list-elements {
+    position: relative;
+    padding-left: 25px;
+    &::before {
+      position: absolute;
+      content: "";
+      border-radius: 50%;
+      height: 7px;
+      width: 7px;
+      background-color: #c5cad4;
+      left: 0px;
+      top: 8px;
+    }
+  }
+
+  .elements__more-info--ico {
+    position: relative;
+    &::after {
+      content: "\e87d";
+      // position: absolute;
+      font-family: "Linearicons-Free";
+      width: 19px;
+      height: 19px;
+      color: #555555;
+      font-size: 18px;
+      font-weight: 400;
+      padding-left: 12px;
+    }
+    &:hover {
+      cursor: pointer;
+      .elements__more-info--text {
+        display: block;
+      }
+    }
+  }
+  .more {
+    position: relative;
+    .elements__more-info--text {
+      text-align: center;
+      color: #f5f5f5;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 30px;
+      width: 300px;
+      height: 129px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      background-color: #000000;
+      top: -138px;
+      left: -177px;
+      padding-top: 20px;
+      display: none;
+      position: absolute;
+      &::before {
+        position: absolute;
+        content: "";
+        border: 10px solid transparent;
+        border-top: 10px solid black;
+        bottom: -18px;
+        right: 93px;
+      }
+    }
+  }
+}
+.pricing__item {
+  .prising__link {
+    display: block;
+    margin: 40px auto 30px auto;
+    width: 300px;
+    height: 50px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+
+    padding: 13px 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    &-starter {
+      background-color: #ff6a6c;
+    }
+    &-business {
+      background-color: #0674ed;
+    }
+    &-agency {
+      background-color: #feb71d;
+    }
+  }
+}

@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MartPlace</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header class="header">
+                <div class="header__top">
+                    <div class="container">
+                        <div class="header__top-box">
+                            <a class="header__logo"><img src="images/header/logo.png" alt=""></a>
+
+                            <div class="header__seller">
+                                <a class="header__seller-link" href="#">Become a Seller</a>
+                            </div>
+                            <div class="user__ico"></div>
+                            <div class="header__notification">
+                                <div class="header__circle-box header__alarm-box">
+                                    <a href="#" class="header__notification-alarm header__circle"><span>25</span>
+                                    </a>
+                                    <div class="header__notification-menu header__alarm-menu">
+                                        <h3 class="header__notification-menu--title header__alarm-menu--title">My
+                                            Notifications<a>View All</a></h3>
+
+                                        <ul>
+                                            <li>
+                                                <a href="#"><img src="images/extra-content/grill3.jpg" alt=""></a>
+                                                <div class="notification__alert-info">
+                                                    <a href="#" class="notification__menu-info--name
+                                                header__alarm-menu--name">Anderson</a>
+                                                    <a class="header__alarm-menu--act added-favourite" href="#"> added
+                                                        to
+                                                        Favourite</a>
+                                                    <a href="#" class="header__alarm-menu--place"> Marketify
+                                                        Coffee Shop</a>
+                                                    <a href="#" class="header__alarm-menu--date">Just now</a></div>
+
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="images/extra-content/grill2.jpg" alt=""></a>
+                                                <div class="notification__alert-info">
+                                                    <a href="#" class="notification__menu-info--name
+                                                header__alarm-menu--name">Michael Jorden</a>
+                                                    <a class="header__alarm-menu--act added-comment" href="#"> commented
+                                                        on</a>
+                                                    <a href="#" class="header__alarm-menu--place"> MartPlace Extension
+                                                        Bundle</a>
+                                                    <a href="#" class="header__alarm-menu--date">2 hours ago</a></div>
+
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="images/extra-content/grill7.jpg" alt=""></a>
+                                                <div class="notification__alert-info">
+                                                    <a href="#" class="notification__menu-info--name
+                                                header__alarm-menu--name">Moshed</a>
+                                                    <a class="header__alarm-menu--act added-purchased"
+                                                        href="#">Purchased</a>
+                                                    <a href="#" class="header__alarm-menu--place">Bryson-Responsive
+                                                        Template</a>
+                                                    <a href="#" class="header__alarm-menu--date">6 hours ago</a></div>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="images/extra-content/grill5.jpg" alt=""></a>
+                                                <div class="notification__alert-info">
+                                                    <a href="#" class="notification__menu-info--name
+                                                header__alarm-menu--name">Tamim</a>
+                                                    <a class="header__alarm-menu--act added-review" href="#">wrote a
+                                                        review
+                                                        on</a>
+                                                    <a href="#" class="header__alarm-menu--place">Rida-Responsive vCard
+                                                        Temp...</a>
+                                                    <a href="#" class="header__alarm-menu--date">2 days ago</a></div>
+
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="header__circle-box header__envelope-box">
+                                    <a href="#" class="header__notification-email header__circle"><span>6</span></a>
+                                    <div class="header__notification-menu header__envelope-menu">
+                                        <h3 class="header__notification-menu--title">My Notifications<a>View All</a>
+                                        </h3>
+                                        <ul>
+                                            <li>
+                                                <a href="#"><img src="images/face/face2.jpg" alt=""></a>
+                                                <div class="notification__menu-info">
+
+                                                    <a href="#" class="notification__menu-info--name
+                                                notification__menu-message_new">Washim <span></span> </a>
+                                                    <a class="date__header not-viewed">Just now</a>
+
+                                                    <a href="#" class="notification__menu-info--text">Hello John Smith!
+                                                        Nunc
+                                                        placerat
+                                                        id...</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="images/face/face3.jpg" alt=""></a>
+                                                <div class="notification__menu-info"><a href="#" class="notification__menu-info--name
+                                                notification__menu-message_new">Bulbul Ahmed <span></span></a>
+                                                    <a class="date__header not-viewed">2 hours ago</a><a href="#"
+                                                        class="notification__menu-info--text">Hello John Smith! Nunc
+                                                        placerat
+                                                        id...</a></div>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="images/face/face4.jpg" alt=""></a>
+                                                <div class="notification__menu-info">
+                                                    <a href="#" class="notification__menu-info--name
+                                                notification__menu-resend">EchoTheme <span></span> </a>
+                                                    <a class="date__header viewed">Jul 16</a>
+                                                    <a href="#" class="notification__menu-info--text">Hello John Smith!
+                                                        Nunc
+                                                        placerat
+                                                        id...</a></div>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="images/face/face.jpg" alt=""></a>
+                                                <div class="notification__menu-info"><a href="#"
+                                                        class="notification__menu-info--name">Themeluva</a>
+                                                    <a class="date__header viewed">May 23</a>
+                                                    <a href="#" class="notification__menu-info--text">Hello John Smith!
+                                                        Nunc
+                                                        placerat
+                                                        id...</a></div>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="images/extra-content/grill5.jpg" alt=""></a>
+                                                <div class="notification__menu-info"><a href="#"
+                                                        class="notification__menu-info--name">Adnan</a>
+                                                    <a class="date__header viewed">Mar 26</a>
+                                                    <a href="#" class="notification__menu-info--text">Hello John Smith!
+                                                        Nunc
+                                                        placerat
+                                                        id...</a></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="header__circle-box header__basket-box"> <a href="#"
+                                        class="header__notification-basket header__circle"><span>2</span></a>
+                                    <div class="header__notification-menu header__basket-menu">
+                                        <ul>
+                                            <li>
+                                                <a href="#"><img src="images/extra-content/grill6.jpg" alt=""></a>
+                                                <div class="basket__menu-info basket__menu-info">
+                                                    <a href="#"
+                                                        class="notification__menu-info--name basket__menu-name">Finance
+                                                        and
+                                                        Consulting
+                                                        Business Theme</a>
+                                                    <button class="menu__remove-item" type="submit"></button>
+                                                    <a
+                                                        class="weekly__tech-shell tech-shell basket__menu-tech">WordPress</a>
+                                                    <div class="product__panel-money basket__menu-price">$60</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="images/extra-content/grill4.jpg" alt=""></a>
+                                                <div class="basket__menu-info basket__menu-info">
+                                                    <a href="#"
+                                                        class="notification__menu-info--name basket__menu-name">Finance
+                                                        and
+                                                        Consulting
+                                                        Business Theme</a>
+                                                    <button class="menu__remove-item" type="submit"></button>
+                                                    <a
+                                                        class="weekly__tech-shell tech-shell basket__menu-tech">WordPress</a>
+                                                    <div class="product__panel-money basket__menu-price">$60</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="total">Total:<span> $80</span></div>
+
+                                        <div class="notification__basket-purchase">
+                                            <a class="notification__gotocart" href="#">Go to Cart</a>
+                                            <a class="notification__gotocheckout" href="#">Go to Checkout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="account__box">
+                                <div class="header__account">
+                                    <a class="header__account-img" style="background-image:url(images/face/face5.jpg)"
+                                        href="#">
+                                    </a>
+                                    <div class="header__account-data">
+                                        <a class="header__account-name" href="#">Taofiq Hakim</a>
+                                        <a class="header__account-balance" href="#"> $20.45</a>
+                                    </div>
+                                </div>
+                                <div class="account__menu">
+                                    <ul class="">
+                                        <li><a class="lnr-user" href="#"> Profile Page</a></li>
+                                        <li><a class="lnr-home" href="#"> Dashboard</a></li>
+                                        <li><a class="lnr-cog" href="#">Account Settings</a></li>
+                                        <li><a class="lnr-cart" href="#">Your Purchases</a></li>
+                                        <li><a class="lnr-heart" href="#">Your Favorites</a></li>
+                                        <li><a class="lnr-dice" href="#">Add Credits</a></li>
+                                        <li><a class="lnr-chart-bars" href="#">Sales Statements</a></li>
+                                        <li><a class="lnr-upload" href="#">Upload Item</a></li>
+                                        <li><a class="lnr-book" href="#">Edit Item</a></li>
+                                        <li><a class="lnr-briefcase" href="#">Withdrawals</a></li>
+                                        <li><a class="lnr-exit" href="#">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <div class="container">
+                        <div class="header__inner">
+                            <nav class="menu">
+                                <div class="menu__btn"></div>
+                                <ul class="menu__list">
+                                    <li class="menu__list-item"><a class="menu__list-link" href="#">HOME</a></li>
+                                    <li class="menu__list-item"><a class="menu__list-link" href="#">all products</a>
+                                    </li>
+                                    <li class="menu__list-item"><a class="menu__list-link" href="#">wordpress</a>
+                                    </li>
+                                    <li class="menu__list-item"><a class="menu__list-link" href="#">festures</a>
+                                    </li>
+                                    <li class="menu__list-item"><a class="menu__list-link" href="#">Pages</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="header__search-btn"></div>
+                            <div class="header__search">
+                                <form class="header__search-form">
+                                    <input type="text" placeholder="Search product here..." required>
+                                    <button type="submit"><img src="images/header/icons/loop.png" alt=""></button>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <div class="breadcrumbs-box"
+                style="background-image: linear-gradient(to left, #0d3ef2 0%, #4c1f9c 100%); opacity: 0.9;">
+                <div class="container">
+                    <div class="breadcrumbs breadcrumbs__small">
+                        <a class="breadcrumbs__not-curren-page" href="#">Home</a>
+                        <a class="breadcrumbs__not-curren-page" href="#">Wordpress</a>
+                        <span class="breadcrumbs__current-page">Corporate & Business</span>
+
+                    </div>
+                    <h2 class="breadcrumbs__title">Wrost - Material Design Responsive Real Estate Template</h2>
+                </div>
+            </div>
+
+            <section class="single-product2">
+                <div class="container">
+                    <div class="single-product2__inner">
+                        <div class="single-product2__main">
+                            <div class="single-product2__box">
+                                <div class="single-product2__box-image"
+                                    style="background-image:url(images/extra-content/grill3.jpg);">
+                                </div>
+                                <div class="single-product2__box-links">
+                                    <div class="single-product2__box-links--top">
+                                        <a class="content__link single-product2__link-preview" href="#">Live Preview</a>
+                                        <button type="button" class="content__link single-product2__link-favourites">Add
+                                            To
+                                            Favorites</button> </div>
+                                    <div class="single-product2__box-links--social">
+                                        <a class="content__link single-product2__link-share" href="#">Share this
+                                            item</a>
+                                        <div class="footer__social-nets">
+                                            <a href="#" class="icon-facebook"></a>
+                                            <a href="#" class="icon-twitter"></a>
+                                            <a href="#" class="icon-google"></a>
+                                            <a href="#" class="icon-pinterest"></a>
+                                            <a href="#" class="icon-linkedin"></a>
+                                            <a href="#" class="icon-dribbble"></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="tabs__conteiner">
+                                <div class="tabs__wrapper">
+                                    <div class="tabs">
+                                        <span class="tab active" data-id="1">Item Details</span>
+                                        <span class="tab__number"></span>
+                                        <span class="tab" data-id="2">Comments <span class="tab__number">
+                                                (35)</span></span>
+                                        <span class="tab" data-id="3">Reviews <span class="tab__number"></span></span>
+                                        <span class="tab" data-id="4">Support <span class="tab__number"></span></span>
+                                        <span class="tab" data-id="5">Item FAQs <span class="tab__number"></span>
+
+                                    </div>
+                                    <div class="tab__content">
+                                        <div class="tab-item" id="1">
+                                            <div class="single-product2__tab-content">
+                                                <div class="single-product2__content-box">
+                                                    <h3 class="single-product2__content-title">Landing Page Details</h3>
+                                                    <p class="single-product2__content-text">Nunc placerat mi id nisi
+                                                        interdum mollis. Praesent pharetra, justo ut scelerisque the
+                                                        mattis,
+                                                        leo quam aliquet congue placerat mi id nisi interdum mollis.
+                                                        Praesent pharetra, justo ut scel erisque the mattis, leo quam
+                                                        aliquet congue justo ut scelerisque. Praesent pharetra, justo ut
+                                                        scelerisque the mattis, leo quam aliquet congue justo ut
+                                                        scelerisque.</p>
+                                                </div>
+                                                <div class="single-product__content-box">
+                                                    <h3 class="single-product2__content-title">Features With HTML List
+                                                        Unordered:</h3>
+                                                    <ul class="content__list">
+                                                        <li>Six different themes for product slider</li>
+                                                        <li> Featured products slider form selected categories.</li>
+                                                        <li>Product slider form specific categories of products. Include
+                                                            or
+                                                            exclude categories.</li>
+                                                        <li> Product slider form specific tags of products. Include or
+                                                            exclude tags. New</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="single-product__content-box">
+                                                    <h3 class="single-product2__content-title">Features With HTML List
+                                                        Ordered:</h3>
+                                                    <ol class="content__list">
+                                                        <li>Product slider form specific categories of products. Include
+                                                            or
+                                                            exclude categories.</li>
+                                                        <li> Product slider form specific tags of products. Include or
+                                                            exclude tags. New</li>
+                                                        <li> Product slider form specific selected products.</li>
+                                                        <li> Product slider form specific products by product SKU.</li>
+                                                    </ol>
+                                                </div>
+                                                <div class="single-product__content-box">
+                                                    <h3 class="single-product2__content-title">Features With Big Image:
+                                                    </h3>
+                                                    <div class="content__image"
+                                                        style="background-image:url(images/extra-content/grill2.jpg)">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-item" id="2">
+                                            <div class="single-product2__tab-content">
+                                                <div class="single-product2__content-box">
+                                                    <h3 class="single-product2__content-title">Landing Page Details</h3>
+                                                    <p class="single-product2__content-text">Nunc placerat mi id nisi
+                                                        interdum mollis. Praesent pharetra, justo ut scelerisque the
+                                                        mattis,
+                                                        leo quam aliquet congue placerat mi id nisi interdum mollis.
+                                                        Praesent pharetra, justo ut scel erisque the mattis, leo quam
+                                                        aliquet congue justo ut scelerisque. Praesent pharetra, justo ut
+                                                        scelerisque the mattis, leo quam aliquet congue justo ut
+                                                        scelerisque.</p>
+                                                </div>
+                                                <div class="single-product__content-box">
+                                                    <h3 class="single-product2__content-title">Features With HTML List
+                                                        Unordered:</h3>
+                                                    <ul class="content__list">
+                                                        <li>Six different themes for product slider</li>
+                                                        <li> Featured products slider form selected categories.</li>
+                                                        <li>Product slider form specific categories of products. Include
+                                                            or
+                                                            exclude categories.</li>
+                                                        <li> Product slider form specific tags of products. Include or
+                                                            exclude tags. New</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="single-product__content-box">
+                                                    <h3 class="single-product2__content-title">Features With HTML List
+                                                        Ordered:</h3>
+                                                    <ol class="content__list">
+                                                        <li>Product slider form specific categories of products. Include
+                                                            or
+                                                            exclude categories.</li>
+                                                        <li> Product slider form specific tags of products. Include or
+                                                            exclude tags. New</li>
+                                                        <li> Product slider form specific selected products.</li>
+                                                        <li> Product slider form specific products by product SKU.</li>
+                                                    </ol>
+                                                </div>
+                                                <div class="single-product__content-box">
+                                                    <h3 class="single-product2__content-title">Features With Big Image:
+                                                    </h3>
+                                                    <div class="content__image"
+                                                        style="background-image:url(images/extra-content/grill6.jpg)">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-item" id="3">
+                                            <div class="single-product2__tab-content">
+                                                <div class="single-product2__content-box">
+                                                    <h3 class="single-product2__content-title">Landing Page Details</h3>
+                                                    <p class="single-product2__content-text">Nunc placerat mi id nisi
+                                                        interdum mollis. Praesent pharetra, justo ut scelerisque the
+                                                        mattis,
+                                                        leo quam aliquet congue placerat mi id nisi interdum mollis.
+                                                        Praesent pharetra, justo ut scel erisque the mattis, leo quam
+                                                        aliquet congue justo ut scelerisque. Praesent pharetra, justo ut
+                                                        scelerisque the mattis, leo quam aliquet congue justo ut
+                                                        scelerisque.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-item" id="4">
+                                            <div class="single-product2__tab-content">
+                                                <div class="single-product2__content-box">
+                                                    <h3 class="single-product2__content-title">Landing Page Details
+                                                    </h3>
+                                                    <p class="single-product2__content-text">Nunc placerat mi id
+                                                        nisi
+                                                        interdum mollis. Praesent pharetra, justo ut scelerisque the
+                                                        mattis,
+                                                        leo quam aliquet congue placerat mi id nisi interdum mollis.
+                                                        Praesent pharetra, justo ut scel erisque the mattis, leo
+                                                        quam
+                                                        aliquet congue justo ut scelerisque. Praesent pharetra,
+                                                        justo ut
+                                                        scelerisque the mattis, leo quam aliquet congue justo ut
+                                                        scelerisque.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-item" id="5">
+                                            <div class="single-product2__tab-content">
+                                                <div class="single-product2__content-box">
+                                                    <h3 class="single-product2__content-title">Landing Page
+                                                        Details
+                                                    </h3>
+                                                    <p class="single-product2__content-text">Nunc placerat mi id
+                                                        nisi
+                                                        interdum mollis. Praesent pharetra, justo ut scelerisque
+                                                        the
+                                                        mattis,
+                                                        leo quam aliquet congue placerat mi id nisi interdum
+                                                        mollis.
+                                                        Praesent pharetra, justo ut scel erisque the mattis, leo
+                                                        quam
+                                                        aliquet congue justo ut scelerisque. Praesent pharetra,
+                                                        justo ut
+                                                        scelerisque the mattis, leo quam aliquet congue justo ut
+                                                        scelerisque.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <aside class="single-product2__aside">
+                            <div class="aside__box">
+                                <div class="aside__box-price"> <sup>$</sup>60.00 </div>
+                                <div class="aside__box-inner">
+                                    <form action="#">
+                                        <input class="radio-btn" type="radio" id="single-license" name="license"
+                                            value="single" checked>
+                                        <label for="single-lecense">Single User License</label>
+                                        <p class="aside__box-text">Nunc placerat mi id nisi interdum is mollis.
+                                            Praesent
+                                            pharetra, justo ut sceleris que the mattis, leo quam.</p>
+                                        <input class="radio-btn" type="radio" id="multi-license" name="license"
+                                            value="multi">
+                                        <label for="multi-license"> Multi User License</label>
+
+                                        <a class="content__link-big" href="#">Purchase Now</a>
+                                        <button type="submit" class="content__link-big--btn">Add To Cart</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="aside__box">
+                                <div class="aside__box__inner">
+                                    <div class="aside__box-panel">
+                                        <div class="panel__box">
+                                            <div class="panel__box-basket">Total Sales</div>
+                                            <div class="panel__box-num">426</div>
+                                        </div>
+                                        <div class="panel__box">
+                                            <div class="panel__box-likes">Favorites </div>
+                                            <div class="panel__box-num">240</div>
+                                        </div>
+
+                                        <div class="panel__box">
+                                            <a class="panel__box-comments" href="#">Comments</a>
+                                            <div class="panel__box-num">35</div>
+                                        </div>
+                                        <div class="panel__box-rating">
+                                            <div class="panel-rating" data-rateyo-rating="4.5"></div>
+                                            <div class="panel__rating-num">( 26 Ratings )</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="aside__box">
+                                <div class="aside__box__inner">
+                                    <h3 class="aside__box-title">Product Information</h3>
+                                    <div class="aside__box-info">
+                                        <div class="box__info-line">
+                                            <div class="box__line-name">Released :</div>
+                                            <div class="box__line-add">16 June 2015</div>
+                                        </div>
+                                        <div class="box__info-line">
+                                            <div class="box__line-name">Updated :</div>
+                                            <div class="box__line-add">28 July 2016</div>
+                                        </div>
+                                        <div class="box__info-line">
+                                            <div class="box__line-name">Version :</div>
+                                            <div class="box__line-add">1.2</div>
+                                        </div>
+                                        <div class="box__info-line">
+                                            <div class="box__line-name">Category :</div>
+                                            <div class="box__line-add">Corporate & Business</div>
+                                        </div>
+                                        <div class="box__info-line">
+                                            <div class="box__line-name">Layout :</div>
+                                            <div class="box__line-add">Responsive</div>
+                                        </div>
+                                        <div class="box__info-line">
+                                            <div class="box__line-name">Retina Ready :</div>
+                                            <div class="box__line-add">
+                                                No</div>
+                                        </div>
+                                        <div class="box__info-line">
+                                            <div class="box__line-name">Files Included :</div>
+                                            <div class="box__line-add">
+                                                Html, CSS, JavaScript</div>
+                                        </div>
+                                        <div class="box__info-line">
+                                            <div class="box__line-name">Browser :</div>
+                                            <div class="box__line-add">IE10, IE11, Firefox,
+                                                Safari, Opera, Chrome</div>
+                                        </div>
+                                        <div class="box__info-line">
+                                            <div class="box__line-name">Bootstrap :</div>
+                                            <div class="box__line-add">Bootstrap 4</div>
+                                        </div>
+                                        <div class="box__info-line">
+                                            <div class="box__line-name">Tags :</div>
+                                            <div class="box__line-add box__line-add--last"> business, template,
+                                                onepage, creative,
+                                                responsive, corporate,
+                                                Bootstrap3, html5</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="aside__box">
+                                <div class="aside__box__inner author__box">
+                                    <h3 class="aside__box-title">Product Author</h3>
+                                    <a href="#" class="aside__box-author"> <img class="aside__box-author--img"
+                                            src="images/extra-content/grill2.jpg" alt=""></a>
+                                    <a class="aside__box-name" href="#">Theme-Valley</a>
+                                    <div class="aside__box-date">Signed Up: 08 April 2016</div>
+                                    <div class="footer__social-nets">
+                                        <a href="#" class="icon-facebook"></a>
+                                        <a href="#" class="icon-twitter"></a>
+                                        <a href="#" class="icon-dribbble"></a>
+                                    </div>
+                                    <div class="aside__box-btn">
+                                        <a href="#" class="aside__box-profile_view">View Profile</a>
+                                        <a href="#" class="aside__box-message">Send Message</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+            <section class="join">
+                <div class="containter">
+                    <h2 class="join__title">Ready to Join Our Marketplace!</h2>
+                    <p class="join__text">Over 25,000 designers and developers trust the MartPlace.</p>
+                    <a href="" class="join__link">Join Us Today</a>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+
+                    <div class="footer__contacts"> <a class="footer__logo"><img src="images/logo-footer.png" alt=""></a>
+                        <p class="footer__text">Nunc placerat mi id nisi interdum they mollis. Praesent pharetra,
+                            justo ut scel erisque the mattis, leo quam.</p>
+                        <a class="footer__contacts-phone" href="tel:Phone+67898752235"> Phone: +6789-875-2235</a>
+                        <a class="footer__contacts-email" href="mailto:support@aazztech.com">support@aazztech.com</a>
+                        <a class="footer__contacts-location" href="#">202 New Hampshire Avenue
+                            Northwest #100, New York-2573</a>
+                    </div>
+                    <div class="footer__company">
+                        <h3 class="footer__company-title footer__title">Our Company</h3>
+                        <ul class="footer__company-list footer__list">
+                            <li class="footer__list-link"><a href="#">About Us</a></li>
+                            <li class="footer__list-link"><a href="#">How It Work</a></li>
+                            <li class="footer__list-link"><a href="#">Affiliates</a></li>
+                            <li class="footer__list-link"><a href="#">Testimonials</a></li>
+                            <li class="footer__list-link"><a href="#">Contact Us</a></li>
+                            <li class="footer__list-link"><a href="#">Copyright Notice</a></li>
+                            <li class="footer__list-link"><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__support">
+                        <h3 class="footer__title">Help Support</h3>
+                        <ul class="footer__support-list footer__list">
+                            <li class="footer__list-link"><a href="#">Support Forum</a></li>
+                            <li class="footer__list-link"><a href="#">Terms & Conditions</a></li>
+                            <li class="footer__list-link"><a href="#">Support Policy</a></li>
+                            <li class="footer__list-link"><a href="#">Refund Policy</a></li>
+                            <li class="footer__list-link"><a href="#">FAQs</a></li>
+                            <li class="footer__list-link"><a href="#">Buyers Faq</a></li>
+                            <li class="footer__list-link"><a href="#">Sellers Faq</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__social">
+                        <h3 class="footer__title">Newsletter</h3>
+                        <p class="footer__text">Subscribe to get the latest news, update and offer information. Don't
+                            worry,
+                            we won't send spam!</p>
+                        <form>
+                            <input type="text" placeholder="Enter email">
+                            <button type="submit">Submit</button>
+                        </form>
+                        <div class="footer__social-nets">
+                            <a href="#" class="icon-facebook"></a>
+                            <a href="#" class="icon-twitter"></a>
+                            <a href="#" class="icon-google"></a>
+                            <a href="#" class="icon-pinterest"></a>
+                            <a href="#" class="icon-linkedin"></a>
+                            <a href="#" class="icon-dribbble"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__copyr">
+                <p>©2017 <a>MartPlace</a>
+                    . All rights reserved. </p>
+                <p>Created by <a>
+                        AazzTech</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

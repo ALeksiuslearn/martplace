@@ -98,7 +98,7 @@
   .header__notification-email span,
   .header__notification-basket span {
     top: -13px;
-    right: -7px;
+    right: 14px;
     width: 18px;
     height: 18px;
     font-size: 11px;
@@ -453,6 +453,20 @@
   }
 }
 @media (max-width: 400px) {
+  // header
+  .header__notification-basket {
+    span {
+      right: auto;
+      left: 14px;
+    }
+    &::before {
+      left: 12px;
+      left: 0px;
+    }
+  }
+  .header__notification-menu.header__basket-menu::after {
+    left: 25px;
+  }
   // pricing-plan
   .pricing__item {
     .prising__link {

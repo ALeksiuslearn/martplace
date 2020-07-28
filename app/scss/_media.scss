@@ -10,7 +10,35 @@
   .pricing__agency {
     margin-top: 30px;
   }
+  // blog
+  .blog__inner {
+    display: block;
+  }
+  .blog__main {
+    max-width: 100%;
+  }
+  .blog__item-text {
+    width: 100%;
+  }
+  .blog-aside__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+  }
+  .blog-aside__item {
+    flex-basis: calc(50% - 15px);
+  }
+
+  .blog-aside__item--4 {
+    height: 270px;
+    flex-basis: 360px;
+    position: absolute;
+    top: 190px;
+    left: 20px;
+  }
 }
+
 @media (max-width: 1041px) {
   .menu__list {
     display: none;
@@ -183,6 +211,12 @@
   }
 }
 
+@media (max-width: 850px) {
+  // blog
+  .blog-aside__item--4 {
+    left: 0px;
+  }
+}
 @media (max-width: 800px) {
   // pricing-plan
 
@@ -192,6 +226,24 @@
   .pricing__agency,
   .pricing__business {
     margin-top: 30px;
+  }
+  .casual__text {
+    width: 100%;
+  }
+  // blog
+  .blog-aside__items {
+    position: static;
+  }
+  .blog-aside__item {
+    flex: 0 0 100%;
+  }
+  .blog-aside__item--4 {
+    flex: 0 0 360px;
+    height: 270px;
+    position: static;
+  }
+  .pagination {
+    display: none;
   }
 }
 @media (max-width: 700px) {
@@ -219,30 +271,32 @@
   right: 6%;
 }
 @media (max-width: 665px) {
-  .header__search {
-    max-width: 320px;
-    & input {
-      border: 1px solid #d9dfe5;
-      border-radius: 23px;
-      display: block;
-      font-size: 15px;
-      font-weight: 400;
-      width: 100%;
-      padding: 10px 75px 10px 25px;
-      color: #898f96;
-      outline: none;
-
-      &::placeholder {
+  .header__inner {
+    .header__search {
+      max-width: 320px;
+      & input {
+        border: 1px solid #d9dfe5;
         border-radius: 23px;
+        display: block;
         font-size: 15px;
         font-weight: 400;
-        line-height: 20;
-      }
-    }
+        width: 100%;
+        padding: 10px 75px 10px 25px;
+        color: #898f96;
+        outline: none;
 
-    & button {
-      width: 61px;
-      height: 39px;
+        &::placeholder {
+          border-radius: 23px;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 20;
+        }
+      }
+
+      & button {
+        width: 61px;
+        height: 39px;
+      }
     }
   }
 
@@ -267,6 +321,10 @@
     p {
       width: 100%;
     }
+  }
+  .login__form.form__popup {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 @media (max-width: 600px) {
@@ -311,12 +369,11 @@
     }
   }
 }
-
 .header__notification-menu.header__basket-menu {
   right: auto;
   left: -45px;
   &::after {
-    left: 61px;
+    left: 73px;
     right: auto;
   }
 }
@@ -326,8 +383,14 @@
   .header__circle-box.header__envelope-box {
     display: none;
   }
-  .header__search {
-    display: none;
+  .header__inner {
+    .header__search {
+      display: none;
+    }
+  }
+
+  .header__notification-basket span {
+    right: 16px;
   }
   // сделать попап
   .header__search-btn {
@@ -344,6 +407,9 @@
       color: #706a6a;
     }
   }
+  .account__menu {
+    right: -22px;
+  }
 
   .account__box.active {
     right: 10%;
@@ -356,6 +422,54 @@
     &::after {
       left: 39px;
     }
+  }
+  // blog
+  .header__search.blog-aside__search {
+    text-align: center;
+    margin: 30px 0 auto 0;
+    padding: 0 25px 40px 25px;
+    input {
+      padding: 16px 25px 16px 25px;
+    }
+    .blog-aside__search-btn {
+      display: block;
+      position: static;
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  .blog-aside__item--1 {
+    height: 250px;
+  }
+  // login
+  .register__form {
+    padding: 0 20px 50px 20px;
+    .form__popup {
+      &-btn {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  // pricing-plan
+  .pricing__item {
+    .prising__link {
+      width: 100%;
+    }
+  }
+  .elements__more-info--ico {
+    display: none;
+  }
+  // blog
+  .blog-aside__item--4 {
+    flex: 0 0 100%;
+  }
+  .blog-aside__box-img {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 }
 @media (min-width: 1040px) {

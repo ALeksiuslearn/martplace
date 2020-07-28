@@ -26,7 +26,7 @@ $(function () {
     $(".panel-rating").rateYo({
       starWidth: "15px",
       // rating: 4.5,
-      normalFill: "#A0A0A0",
+      normalFill: "#fff",
       readOnly: true,
 
       spacing: "3px",
